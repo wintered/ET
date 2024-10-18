@@ -3,11 +3,11 @@
 
 ET: Enumerative Testing of SMT Solvers
 ==============================================
+ET **exhaustively enumerate test cases** based on a context-free grammar.  It will generate small test cases first exploiting the
+the small-scope hypothesis which states that *"most bugs in software trigger on small inputs"*. Testing in this way, has several unique 
+benefits:
 
-An enumerative testing framework. Given an context-free grammar (in ANTRL format) and a number of desired tests, ET enumerates **the smallest inputs** from that 
-grammar. ET can be used to stress-test software exploiting the small-scope hypothesis [Jackson '04] 
-
-ET is built on top of testing-feat, a Haskell testing library for enumeration of algebraic datatypes.
+ET is built on top of `testing-feat`, a Haskell testing library for enumeration of algebraic datatypes.
 
 ## Installation 
 
