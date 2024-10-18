@@ -34,18 +34,6 @@ To use ET, check out the repository:
 git clone https://github.com/wintered/ET
 ```
 
-## Structure 
-```
-bin/
-├── gen_tester          - given <grammar>, generate exhaustive tester bin/feat-<grammar>    
-├── feat-<grammar>      - given <num_tests> <folder> generate tests    
-├── oracle              - script for differential testing SMT solvers   
-└── run_tester          - generate and run tests
-grammars/               - smtlib grammars
-etc/                    - helper scripts, antlr  (for validating grammars)
-solvers.cfg             - solver configurations
-```
-
 ## Usage
 
 ### Generate tester
@@ -65,3 +53,16 @@ bin/run_tester 10 100000 Bitvectors solvers.cfg
 This will first generate 10,0000 tests in `tests/Bitvectors` (i.e., call bin/feat-Bitvectors).
 Then these tests will be forwarded (using 10 cores) to `bin/oracle` which calls 
 the SMT solvers from `solvers.cfg` and differentially tests them.  
+
+
+## Structure 
+```
+bin/
+├── gen_tester          - given <grammar>, generate exhaustive tester bin/feat-<grammar>    
+├── feat-<grammar>      - given <num_tests> <folder> generate tests    
+├── oracle              - script for differential testing SMT solvers   
+└── run_tester          - generate and run tests
+grammars/               - smtlib grammars
+etc/                    - helper scripts, antlr  (for validating grammars)
+solvers.cfg             - solver configurations
+```
