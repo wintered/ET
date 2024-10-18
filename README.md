@@ -11,7 +11,6 @@
     </a>
 </div>
 <br>
-<br>
 
 ET: Enumerative Testing of SMT Solvers
 ==============================================
