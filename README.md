@@ -1,8 +1,8 @@
 <p align="center"><a><img width="200" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a></p>
 
 
-ET: Software Testing with Assurances
-=======================================
+ET: Bounded Exhaustive Testing of SMT Solvers
+==============================================
 
 An enumerative testing framework. Given an context-free grammar (in ANTRL format) and a number of desired tests, ET enumerates **the smallest inputs** from that 
 grammar. ET can be used to stress-test software exploiting the small-scope hypothesis [Jackson '04] 
