@@ -14,13 +14,16 @@
 
 ET: Enumerative Testing of SMT Solvers
 ==============================================
-ET **exhaustively enumerate test cases** based on a context-free grammar.  It will generate small test cases first exploiting the
-the small-scope hypothesis which states that *"most bugs in software trigger on small inputs"*. Testing with small test cases has many unique benefits
-in particular small bug triggers, bounded guarantees, an measuring software evolution. 
+ET **exhaustively enumerate test cases** based on a context-free grammar. It 
+will generate small test cases first exploiting the small-scope hypothesis which 
+states that *"most bugs in software trigger on small inputs"*. Testing with small 
+test cases has many unique benefits in particular small bug triggers, bounded 
+guarantees, an measuring software evolution. 
 
-ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, a Haskell testing library for enumeration of algebraic datatypes.
+ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, 
+a Haskell testing library for enumeration of algebraic datatypes.
 
-## Installation 
+## 🚀 Installation 
 
 To use ET, please install the following requirements:  
 
@@ -38,7 +41,7 @@ To use ET, check out the repository:
 git clone https://github.com/wintered/ET
 ```
 
-## Usage
+## 💽 Usage
 
 #### 1. Generate tester
 
@@ -54,20 +57,18 @@ This generates the executable bin/feat-Bitvectors.
 bin/run_tester 2 1000 Bitvectors solvers.cfg 
 ```
 
-This will first generate 1,000 tests in `tests/Bitvectors` using the previously generated tester in `bin/feat-Bitvectors`.
-Then these tests will be forwarded (using 2 CPU cores) to `bin/oracle` which calls 
-the SMT solvers from `solvers.cfg` and differentially tests them.  
+This will first generate 1,000 tests in `tests/Bitvectors` using the previously 
+generated tester in `bin/feat-Bitvectors`. Then these tests will be forwarded 
+(using 2 CPU cores) to `bin/oracle` which calls the SMT solvers from `solvers.cfg` 
+and differentially tests them.  
 
-## Structure 
-```
-bin/
-├── gen_tester          - given <grammar>, generate exhaustive tester bin/feat-<grammar>    
-├── feat-<grammar>      - given <num_tests> <folder> generate tests    
-├── oracle              - script for differential testing SMT solvers   
-└── run_tester          - generate and run tests
-grammars/               - smtlib grammars
-etc/                    - helper scripts, antlr  (for validating grammars)
-solvers.cfg             - solver configurations
-```
 
+# 📬 Feedback
+For bugs/issues/questions/feature requests please file an issue. We are always happy 
+to receive your feedback or help you adjust ET to the needs of your custom 
+solver, help you build on ET, etc.
+
+## ✍️ Publication
+
+## Additional Resources
 
