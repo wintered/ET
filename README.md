@@ -41,7 +41,7 @@ solvers.cfg             - solver configurations
 
 ## Usage
 
-### 1. Generate tester
+### Generate tester
 
 ```
 bin/gen_tester grammars/Bitvectors.g4
@@ -49,7 +49,7 @@ bin/gen_tester grammars/Bitvectors.g4
 
 This generates the executable bin/feat-Bitvectors.
 
-### 2. Run tester 
+### Run tester 
 
 ```
 bin/run_tester 10 100000 Bitvectors solvers.cfg 
