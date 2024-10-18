@@ -43,7 +43,7 @@ git clone https://github.com/wintered/ET
 
 ## 💽 Usage
 
-#### 1. Generate tester
+#### 1. Generate Tester
 
 ```
 bin/gen_tester grammars/Bitvectors.g4
@@ -51,7 +51,7 @@ bin/gen_tester grammars/Bitvectors.g4
 
 This generates the executable bin/feat-Bitvectors.
 
-#### 2. Run tester 
+#### 2. Run Tester 
 
 ```
 bin/run_tester 2 1000 Bitvectors solvers.cfg 
@@ -72,9 +72,9 @@ Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.gi
 
 ## ✍️ Publication
 
-### Bug findings in SMT solvers
+### Bug Findings in SMT solvers
 
-### Correctness Evolution of SMT Solvers (Nov 2016 - Mar 2024)
+### Evolution of SMT Solvers (Nov 2016 - Mar 2024)
 
 ## ➕ Additional Resources
 -  
