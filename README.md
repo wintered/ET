@@ -76,5 +76,5 @@ Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.gi
 
 ### Evolution of SMT Solvers  
 
-## Additional Resources
+## ➕ Additional Resources
 -  
