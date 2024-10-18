@@ -25,5 +25,10 @@ jobs:
         cabal install testing-feat
         cabal install size-based
 
-    - name: Run Python tests
-      run: pytest
+    - name: Test ET 
+      run: |
+        git clone https://github.com/wintered/ET
+        cd ET
+        bin/gen_tester grammars/Bitvectors.g4
+        #bin/run_tester 2 1000 Bitvectors solvers.cfg
+        
