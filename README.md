@@ -1,8 +1,7 @@
 <p align="center"><a><img width="200" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a></p>
 <br />
 <p align="center">
-    <a href="https://github.com/testsmt/yinyang/actions" alt="Build status">
-        <img src="https://github.com/testsmt/yinyang/workflows/ci/badge.svg" /></a>
+    [![Python & Haskell CI](https://github.com/wintered/ET/actions/workflows/ci.yml/badge.svg)](https://github.com/wintered/ET/actions/workflows/ci.yml)
     <a href="https://opensource.org/licenses/MIT" alt="License">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
 </p>
