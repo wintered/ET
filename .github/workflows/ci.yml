@@ -22,9 +22,8 @@ jobs:
 
     - name: Install Haskell packages
       run: |
-        cabal install testing-feat
-        cabal install size-based
-        cabal install --lib size-based
+        cabal install testing-feat size-based
+        cabal install --lib testing-feat size-based
 
     - name: Test ET 
       run: |
