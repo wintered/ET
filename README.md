@@ -72,9 +72,9 @@ Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.gi
 
 ## ✍️ Publication
 
-### Bug Findings in SMT solvers
+### 🪳Bug Findings in SMT solvers
 
-### Evolution of SMT Solvers (Nov 2016 - Mar 2024)
+### 📈📉 Evolution of SMT Solvers (Nov 2016 - Mar 2024)
 
 ## ➕ Additional Resources
 -  
