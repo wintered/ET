@@ -58,10 +58,3 @@ bin/run_tester 10 100000 Bitvectors solvers.cfg
 This will first generate 10,0000 tests in `tests/Bitvectors` (i.e., call bin/feat-Bitvectors).
 Then these tests will be forwarded (using 10 cores) to `bin/oracle` which calls 
 the SMT solvers from `solvers.cfg` and differentially tests them.  
-
-
-### Validating grammars with ANTLR  
-```
-etc/validate_grammar grammars/Bitvectors.g4
-```
-
