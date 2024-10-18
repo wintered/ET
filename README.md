@@ -1,4 +1,4 @@
-<p align="center"><a><img width="160" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a></p>
+<p align="center"><a><img width="1600" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a></p>
 
 
 ET
@@ -46,10 +46,3 @@ bin/run_tester 10 100000 Bitvectors solvers.cfg
 This will first generate 100000 tests in tests/Bitvectors (i.e. call bin/feat-Bitvectors).
 Then these tests will be forwarded (using 10 cores) to bin/oracle which calls 
 the SMT solvers from solvers.cfg and differentially tests them.  
-
-
-### Validating grammars with ANTLR  
-```
-etc/validate_grammar grammars/Bitvectors.g4
-```
-
