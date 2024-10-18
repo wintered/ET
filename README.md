@@ -31,8 +31,8 @@ To use ET, please install the following requirements:
 python3
 ghc
 cabal
-cabal install testing-feat 
-cabal install size-based
+cabal install testing-feat size-based                                   
+cabal install --lib testing-feat size-based    
 ```
 GNU parallel is necessary for using `bin/run_tester` to run the tool.     
 
@@ -72,7 +72,7 @@ solver, help you build on ET, etc.
 
 ### Correctness & Performance Bugs
 
-### Evolution 
+### Evolution of SMT Solvers  
 
 ## Additional Resources
 -  
