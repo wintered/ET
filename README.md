@@ -63,7 +63,7 @@ generated tester in `bin/feat-Bitvectors`. Then these tests will be forwarded
 and differentially tests them.  
 
 
-# 📬 Feedback
+## 📬 Feedback
 For bugs/issues/questions/feature requests please file an issue. We are always happy 
 to receive your feedback or help you adjust ET to the needs of your custom 
 solver, help you build on ET, etc.
