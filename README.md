@@ -68,6 +68,8 @@ For bugs/issues/questions/feature requests please file an issue. We are always h
 to receive your feedback or help you adjust ET to the needs of your custom 
 solver, help you build on ET, etc.
 
+Contact person: [Dominik Winterer](https://wintered.github.io/)
+
 ## ✍️ Publication
 
 ### Correctness & Performance Bugs
