@@ -58,28 +58,6 @@ This will first generate 1,000 tests in `tests/Bitvectors` (i.e., call bin/feat-
 Then these tests will be forwarded (using 2 cores) to `bin/oracle` which calls 
 the SMT solvers from `solvers.cfg` and differentially tests them.  
 
-
-## Usage
-
-### Generate tester
-
-```
-bin/gen_tester grammars/Bitvectors.g4
-```
-
-This generates the executable bin/feat-Bitvectors.
-
-### Run tester 
-
-```
-bin/run_tester 10 100000 Bitvectors solvers.cfg 
-```
-
-This will first generate 10,0000 tests in `tests/Bitvectors` (i.e., call bin/feat-Bitvectors).
-Then these tests will be forwarded (using 10 cores) to `bin/oracle` which calls 
-the SMT solvers from `solvers.cfg` and differentially tests them.  
-
-
 ## Structure 
 ```
 bin/
