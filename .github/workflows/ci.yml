@@ -13,7 +13,7 @@ jobs:
     - name: Install Python dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y python3
+        sudo apt-get install -y python3 parallel z3 cvc5  
 
     - name: Install GHC and Cabal
       run: |
@@ -27,8 +27,6 @@ jobs:
 
     - name: Test ET 
       run: |
-        git clone https://github.com/wintered/ET
-        cd ET
         bin/gen_tester grammars/Bitvectors.g4
         #bin/run_tester 2 1000 Bitvectors solvers.cfg
         
