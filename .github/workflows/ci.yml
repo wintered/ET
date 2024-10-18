@@ -30,8 +30,7 @@ jobs:
         bin/gen_tester grammars/Bitvectors.g4
         bin/run_tester 2 100 Bitvectors solvers.cfg
         checksum=$(cat tests/Bitvectors/*.smt2 | md5sum | awk '{print $1}')
-        echo $checksum
         expected_checksum="09afe38ea30ca3ae7eccff6ed176da01"
         [[ "$checksum" != "$expected_checksum" ]] && { echo "Checksum does not match. Exiting."; exit 1; }
-        #echo "Checksum matches."
+        echo "Checksum matches." 
         
