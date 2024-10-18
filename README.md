@@ -1,4 +1,4 @@
-<p align="center"><a><img width="220" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a></p>
+<p align="center"><a><img width="200" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a></p>
 
 
 ET
