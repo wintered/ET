@@ -40,7 +40,7 @@ git clone https://github.com/wintered/ET
 
 ## Usage
 
-### Generate tester
+#### 1. Generate tester
 
 ```
 bin/gen_tester grammars/Bitvectors.g4
@@ -48,7 +48,7 @@ bin/gen_tester grammars/Bitvectors.g4
 
 This generates the executable bin/feat-Bitvectors.
 
-### Run tester 
+#### 2. Run tester 
 
 ```
 bin/run_tester 2 1000 Bitvectors solvers.cfg 
