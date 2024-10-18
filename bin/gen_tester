@@ -1,0 +1,14 @@
+#! /bin/bash
+if [ ! "$#" -eq 1 ]; then
+    echo "Usage: $0 <grammar>"
+    exit 2
+fi
+
+FLAGS="-package size-based -package base"
+grammar_file=$1
+grammar_name=`basename $grammar_file`   
+grammar_name=${grammar_name//.g4/}
+
+etc/cfg2rtg $grammar_file > $grammar_name.hs
+ghc $grammar_name.hs $FLAGS -o bin/feat-$grammar_name
+#rm -rf $grammar_name.hi $grammar_name.o $grammar_name.hs

@@ -1,0 +1,89 @@
+#! /usr/bin/env python3
+# 
+# Transforms a context free grammar (CFG) into a regular tree grammar (RTG)    
+# suitable for testing-FEAT,  i.e. practically speaking  
+#    ANTLR grammar file -> algebraic datatype + feat additions  
+#
+# Assumption: 
+#   w.o.l.g. CFG's productions are either P -> v1...vn with vi nonterminal         
+#                                  or     P -> e1...em with e1 terminals 
+# Disclaimer: contains lots of hacks   
+#
+# TODO (Dominik):
+# - pay for two rules that refer to one another, i.e. form zero cost cyles   
+
+import sys
+if len(sys.argv) != 2: 
+    print("Usage: cfg2rtg <grammar>")  
+    exit(2)
+
+prods = open(sys.argv[1]).read().replace("EOF","")
+prods = prods.split(";")[0:-1]
+grammar = prods[0].strip().split(" ")[1]
+prods = prods[1:]
+
+print("""import Data.List
+import System.IO
+import System.Exit
+import System.Environment
+
+import Test.Feat.Enumerate
+import Control.Enumerable
+import Test.Feat.Access
+import Test.Feat
+""")
+
+for i in range(0, len(prods)):
+    prod = prods[i].strip("\n")
+    lhs = prod.split(":")[0].strip()
+    rhs = prod.split(":")[1].strip()
+    rhs = [r.strip() for r in rhs.split("|")]
+    s = ""
+    for i,r in enumerate(rhs):
+        con = "C" + str(i) + "_" + lhs.capitalize()
+        s += con.capitalize() + " "
+        if not r.startswith("'"): # arity >= 1 
+            s += " ".join([c.capitalize() for c in r.split(" ")])
+        s += "| "
+    print("data {} = {}".format(lhs.capitalize(),s[:-2]))
+    print("instance Show {} where".format(lhs.capitalize()))
+    for i,r in enumerate(rhs):
+        con = "C" + str(i) + "_" + lhs.capitalize()
+        if r.startswith("'"): # arity = 0
+            print("  show {} = {}".format(con.capitalize() + " ", r.replace('"','\\"').replace("'",'"')))
+        else:  # arity >= 1
+            arg_str = " ".join(["a"+str(j) for j,_ in enumerate(r.split(" "))])
+            show_str = "show " + " ++ \" \" ++ show ".join(["a"+str(j) for j,_ in enumerate(r.split(" "))])
+            print("  show ({}{}) = {}".format(con.capitalize() + " ", arg_str,show_str))
+    print("instance Enumerable {} where".format(lhs.capitalize()))
+    print("  enumerate = share $ aconcat [",end="")
+    for i,r in enumerate(rhs):
+        if i != 0: print(",",end="")
+        con = "C" + str(i) + "_" + lhs.capitalize()
+        if r.startswith("'"): # arity = 0
+            print("c{} {}".format(0, con.capitalize()), end="")
+        else:
+            if lhs in r.split(" "): # recursive production
+                print("pay(c{} {})".format(len(r.split(" ")), con.capitalize()), end="")
+            #
+            # TODO(Dominik): this a hack which only works with SMT-LIB grammars         
+            # Intuition: pay if zero cost cycle of rules
+            elif "ParOpen" in r.split(" "):  
+                print("pay(c{} {})".format(len(r.split(" ")), con.capitalize()), end="")
+            else: 
+                print("c{} {}".format(len(r.split(" ")), con.capitalize()), end="")
+    print("]")
+    print()
+
+print("""main = do
+  args <- getArgs
+  prog <- getProgName
+  if (length args) /= 2 then""")
+print("      die \"Usage: ./bin/feat-{} <num_tests> <test-folder>\"".format(grammar))
+print("""  else putStr ""
+  let num_tests = read (args!!0) :: Int
+  let lst = take num_tests $ concat $ map snd (values :: [(Integer, [(Start)])])
+  let temp_folder = args!!1
+  let fn i = temp_folder ++ "/"++ (show i) ++ ".smt2"
+  sequence_ [ writeFile (fn i) (show program)
+            | (i,program) <- zip [0..] lst ]""")

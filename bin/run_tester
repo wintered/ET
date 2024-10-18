@@ -1,0 +1,21 @@
+#! /bin/bash
+if [ ! "$#" -eq 4 ]; then
+    echo "Usage: $0 <cores> <num_tests> <theory> <solver-cfg-file>"
+    exit 2
+fi
+
+num_cores=$1
+num_tests=$2
+theory=$3
+solver_cfg_files=$4
+
+mkdir -p bugs-$theory
+mkdir -p tests/$theory
+
+## Generates number of exhaustive tests    
+bin/feat-$theory $num_tests tests/$theory
+
+
+## Calls SMT solvers with GNU parallel
+find tests/$theory -name "*.smt2" -print0|\
+parallel -0 -j${num_cores} --eta --progress --bar bin/oracle {} {}.time $solver_cfg_files bugs-$theory 8.0 1048576
