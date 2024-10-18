@@ -1,7 +1,12 @@
 name: Python & Haskell CI
 
-on: [push]
-
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'   # Ignore changes to README.md
+      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,5 +37,5 @@ jobs:
         checksum=$(cat tests/Bitvectors/*.smt2 | md5sum | awk '{print $1}')
         expected_checksum="09afe38ea30ca3ae7eccff6ed176da01"
         [[ "$checksum" != "$expected_checksum" ]] && { echo "Checksum does not match. Exiting."; exit 1; }
-        echo "Checksum matches." 
-        
+        echo "Checksum matches."
+
