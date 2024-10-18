@@ -7,7 +7,7 @@ ET **exhaustively enumerate test cases** based on a context-free grammar.  It wi
 the small-scope hypothesis which states that *"most bugs in software trigger on small inputs"*. Testing in this way, has several unique 
 benefits:
 
-ET is built on top of `testing-feat`, a Haskell testing library for enumeration of algebraic datatypes.
+ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, a Haskell testing library for enumeration of algebraic datatypes.
 
 ## Installation 
 
