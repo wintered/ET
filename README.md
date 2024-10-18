@@ -54,8 +54,8 @@ This generates the executable bin/feat-Bitvectors.
 bin/run_tester 2 1000 Bitvectors solvers.cfg 
 ```
 
-This will first generate 1,000 tests in `tests/Bitvectors` (i.e., call bin/feat-Bitvectors).
-Then these tests will be forwarded (using 2 cores) to `bin/oracle` which calls 
+This will first generate 1,000 tests in `tests/Bitvectors` using the previously generated tester in `bin/feat-Bitvectors`.
+Then these tests will be forwarded (using 2 CPU cores) to `bin/oracle` which calls 
 the SMT solvers from `solvers.cfg` and differentially tests them.  
 
 ## Structure 
