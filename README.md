@@ -15,8 +15,8 @@
 ET: Enumerative Testing of SMT Solvers
 ==============================================
 ET **exhaustively enumerate test cases** based on a context-free grammar.  It will generate small test cases first exploiting the
-the small-scope hypothesis which states that *"most bugs in software trigger on small inputs"*. Testing in this way, has several unique 
-benefits:
+the small-scope hypothesis which states that *"most bugs in software trigger on small inputs"*. Testing with small test cases has many unique benefits
+in particular small bug triggers, bounded guarantees, an measuring software evolution. 
 
 ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, a Haskell testing library for enumeration of algebraic datatypes.
 
