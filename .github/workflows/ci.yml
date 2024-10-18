@@ -24,9 +24,10 @@ jobs:
       run: |
         cabal install testing-feat
         cabal install size-based
+        cabal install --lib size-based
 
     - name: Test ET 
       run: |
         bin/gen_tester grammars/Bitvectors.g4
-        #bin/run_tester 2 1000 Bitvectors solvers.cfg
+        bin/run_tester 2 100 Bitvectors solvers.cfg
         
