@@ -14,11 +14,11 @@
 
 ET: Enumerative Testing of SMT Solvers
 ==============================================
-ET **exhaustively enumerate test cases** based on a context-free grammar. It 
+ET **exhaustively enumerates test cases** based on a context-free grammar. It 
 will generate small test cases first exploiting the small-scope hypothesis which 
 states that *"most bugs in software trigger on small inputs"*. Testing with small 
-test cases has many unique benefits in particular small bug triggers, bounded 
-guarantees, an measuring software evolution. 
+test cases has many unique benefits: tiny bug triggers, bounded 
+guarantees, and measuring software evolution. 
 
 ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, 
 a Haskell testing library for enumeration of algebraic datatypes.
@@ -68,7 +68,7 @@ For bugs/issues/questions/feature requests please file an issue. We are always h
 to receive your feedback or help you adjust ET to the needs of your custom 
 solver, help you build on ET, etc.
 
-Contact person: [Dominik Winterer](https://wintered.github.io/)
+Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.github.io//)
 
 ## ✍️ Publication
 
