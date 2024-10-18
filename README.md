@@ -11,7 +11,7 @@ ET is built on top of testing-feat, a Haskell testing library for enumeration of
 
 ## Installation 
 
-ET has the following requirements:  
+To use ET, please install the following requirements:  
 
 ```
 python3
