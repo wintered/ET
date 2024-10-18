@@ -13,7 +13,7 @@ cabal
 cabal install testing-feat 
 cabal install size-based
 ```
-GNU parallel is necessary for using bin/run_tester to run the tool.     
+GNU parallel is necessary for using `bin/run_tester` to run the tool.     
 
 ## Structure 
 ```
@@ -43,9 +43,9 @@ This generates the executable bin/feat-Bitvectors.
 bin/run_tester 10 100000 Bitvectors solvers.cfg 
 ```
 
-This will first generate 100000 tests in tests/Bitvectors (i.e. call bin/feat-Bitvectors).
-Then these tests will be forwarded (using 10 cores) to bin/oracle which calls 
-the SMT solvers from solvers.cfg and differentially tests them.  
+This will first generate 100000 tests in `tests/Bitvectors` (i.e., call bin/feat-Bitvectors).
+Then these tests will be forwarded (using 10 cores) to `bin/oracle` which calls 
+the SMT solvers from `solvers.cfg` and differentially tests them.  
 
 
 ### Validating grammars with ANTLR  
