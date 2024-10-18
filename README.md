@@ -70,6 +70,8 @@ solver, help you build on ET, etc.
 
 ## ✍️ Publication
 
+### Correctness & Performance
+
 ### Evolution 
 
 ## Additional Resources
