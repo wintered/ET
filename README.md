@@ -76,8 +76,8 @@ Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.gi
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/497d154d-727e-4de1-88a6-f00042133e27">
 
 ### Correctness (Nov 2016 - Mar 2024)
-<img width="1400" alt="image" src="https://github.com/user-attachments/assets/e9f05473-cd9d-4630-80dc-fd96a888cd4f">
-<img width="1400" alt="image" src="https://github.com/user-attachments/assets/034f5271-6782-49ec-9804-bcb2ab989459">
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/e9f05473-cd9d-4630-80dc-fd96a888cd4f">
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/034f5271-6782-49ec-9804-bcb2ab989459">
 
 
 
