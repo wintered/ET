@@ -1,0 +1,1934 @@
+Issue #106
+Labels: Z3, Reported, Ints, 2, Performance
+link: XXXXX
+
+```
+[662] % time z3release small.smt2 
+sat
+
+real	0m0.100s
+user	0m0.016s
+sys	0m0.024s
+[663] % time z3-4.11.2 tactic.default_tactic=smt sat.euf=true small.smt2 
+sat
+
+real	0m0.047s
+user	0m0.004s
+sys	0m0.019s
+[664] % timeout -s 9 60 z3release tactic.default_tactic=smt sat.euf=true small.smt2
+Killed
+[666] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (<= 2 (* (- (* a a) a) b)))
+(check-sat)
+```
+
+Issue #105
+Labels: Z3, Reported, Ints, 2, Performance
+link: XXXXX
+```
+[543] % time z3release small.smt2 
+unsat
+
+real    0m0.140s
+user    0m0.040s
+sys     0m0.016s
+[544] % time z3-4.11.2 tactic.default_tactic=smt sat.euf=true small.smt2 
+unsat
+
+real    0m0.050s
+user    0m0.005s
+sys     0m0.020s
+[545] % timeout -s 9 60 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[546] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (= (* (mod (+ a a) b) b) 2))
+(check-sat)
+```
+
+Issue #104
+Labels: cvc5, Confirmed, Ints, 1, Performance
+link: XXXXX
+
+```
+[635] % time cvc4-1.7 -q small.smt2 
+sat
+
+real	0m0.044s
+user	0m0.022s
+sys	0m0.000s
+[636] % time cvc5 -q --force-logic=QF_NIA small.smt2 
+sat
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+[637] % timeout -s 9 60 cvc5 -q small.smt2 
+Killed
+[638] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (>= a (- 2 (- a (* a (* a (+ b 2)))))))
+(check-sat)
+```
+
+Issue #103
+Labels: cvc5, Confirmed, Ints, 1, Performance
+link: XXXXX
+```
+[621] % time cvc5 small1.smt2 
+unsat
+
+real	0m0.029s
+user	0m0.018s
+sys	0m0.000s
+[622] % timeout -s 9 60 cvc5 small2.smt2 
+Killed
+[623] % cat small1.smt2 
+(set-logic QF_NIA)
+(declare-const a Int)
+(declare-const b Int)
+(assert (= 2 (- (* a a) (* b b))))
+(assert (>= a b 0))
+(check-sat)
+[624] % cat small2.smt2 
+(set-logic QF_NIA)
+(declare-const a Int)
+(declare-const b Int)
+(assert (= 2 (- (* a a) (* b b))))
+(assert (<= a b 0))
+(check-sat)
+```
+
+Issue #102
+Labels: cvc5, Confirmed, Ints, 1, Performance
+link: XXXXX
+
+```
+[590] % time cvc4-1.7 -q small.smt2 
+sat
+
+real	0m0.021s
+user	0m0.006s
+sys	0m0.006s
+[591] % time cvc5 -q --force-logic=QF_NIA small.smt2 
+sat
+
+real	0m0.008s
+user	0m0.004s
+sys	0m0.004s
+[592] % timeout -s 9 60 cvc5 -q small.smt2 
+Killed
+[593] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (< 2 (* (abs a) (+ b 2))))
+(check-sat)
+```
+
+Issue #101
+Labels: Z3, Reported, Ints, 2, Performance
+link: XXXXX
+
+```
+[528] % time z3release small.smt2 
+sat
+
+real	0m0.104s
+user	0m0.017s
+sys	0m0.017s
+[529] % time z3-4.11.2 tactic.default_tactic=smt sat.euf=true small.smt2 
+sat
+
+real	0m0.346s
+user	0m0.156s
+sys	0m0.017s
+[530] % timeout -s 9 60 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[531] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(declare-const c Int)
+(assert (< (mod a (* b c)) (mod a b)))
+(check-sat)
+```
+
+Issue #100
+Labels: cvc5, Confirmed, Ints, 1, Performance
+link: XXXXX
+```
+[569] % time cvc5-1.0.0 -q small.smt2
+sat
+
+real	0m0.075s
+user	0m0.036s
+sys	0m0.007s
+[570] % time cvc5 --force-logic=QF_NIA small.smt2
+sat
+
+real	0m0.007s
+user	0m0.007s
+sys	0m0.000s
+[571] % timeout -s 9 60 cvc5 -q small.smt2
+Killed
+[572] % cat small.smt2
+(declare-const a Int)
+(assert (= (+ 2 (* (mod a 2) a)) a))
+(check-sat)
+```
+
+Issue #99
+Labels: Z3, Reported, Ints, Reals, 2, Performance
+link: XXXXX
+
+```
+[592] % time z3release small.smt2 
+sat
+
+real	0m0.124s
+user	0m0.042s
+sys	0m0.012s
+[593] % time z3-4.11.2 tactic.default_tactic=smt sat.euf=true small.smt2 
+sat
+
+real	0m0.056s
+user	0m0.013s
+sys	0m0.010s
+[594] % timeout -s 9 60 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[595] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (>= (* b (- b (mod a b))) 2))
+(check-sat)
+```
+
+Issue #98
+Labels: Z3, Reported, Ints, 2, Performance
+link: XXXXX
+```
+[592] % time z3release small.smt2 
+sat
+
+real	0m0.124s
+user	0m0.042s
+sys	0m0.012s
+[593] % time z3-4.11.2 tactic.default_tactic=smt sat.euf=true small.smt2 
+sat
+
+real	0m0.056s
+user	0m0.013s
+sys	0m0.010s
+[594] % timeout -s 9 60 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[595] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (>= (* b (- b (mod a b))) 2))
+(check-sat)
+```
+
+Issue #97
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+
+```
+[551] % time z3-4.11.0 small.smt2 
+sat
+
+real    0m0.040s
+user    0m0.010s
+sys     0m0.017s
+[552] % timeout -s 9 60 z3-4.11.2 small.smt2 
+Killed
+[553] % timeout -s 9 60 z3release small.smt2 
+Killed
+[554] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (str.contains (str.replace a b a) a))
+(check-sat)
+```
+
+Issue #96
+Labels: cvc5, Confirmed, Reals, default, Performance
+link: XXXXX
+```
+558] % timeout -s 9 60 cvc5n -q small.smt2 
+Killed
+[559] % cat small.smt2 
+(declare-const a Real)
+(assert (= (< 0.0 a) (<= 0.0 (cos 1.0))))
+(check-sat)
+```
+
+Issue #95
+Labels: cvc5, Confirmed, Reals, default, Performance
+link: XXXXX
+```
+[647] % cvc4-1.8 -q small.smt2 
+unsat
+[648] % timeout -s 9 60 cvc5 -q small.smt2 
+Killed
+[649] % cat small.smt2 
+(declare-const a Real)
+(assert (> 1.0 (arccos 1.0)))
+(check-sat)
+```
+
+Issue #94
+Labels: cvc5, Confirmed, Reals, default, Performance
+link: XXXXX
+```
+[633] % cvc5-1.0.0 -q small.smt2 
+sat
+[634] % cvc5n -q small.smt2 
+unknown
+[635] % cat small.smt2 
+(declare-const a Real)
+(declare-const b Real)
+(assert (or (> (sin b) a) (= (cos (/ a (/ b b))) b)))
+(check-sat)
+```
+
+Issue #93
+Labels: cvc5, Confirmed, Reals, default, Performance
+link: XXXXX
+```
+[535] % time cvc4-1.8 -q small.smt2
+sat
+
+real    0m0.013s
+user    0m0.009s
+sys     0m0.004s
+[536] % timeout -s 9 60 cvc5 -q small.smt2 
+Killed
+[533] % cat small.smt2 
+(declare-const a Real)
+(declare-const b Real)
+(declare-const c Real)
+(assert (or (> (sin b) c) (< a (/ c b))))
+(check-sat)
+```
+
+Issue #92
+Labels: cvc5, Confirmed, Reals, default, Performance
+link: XXXXX
+```
+[754] % cvc5-1.0.0 --check-models small.smt2 
+sat
+[755] % cvc5 --check-models small.smt2 
+Warning : SolverEngine::checkModel(): cannot check simplified assertion : (= (exp 0.0) 1.0)
+sat
+[756] % cat small.smt2 
+(set-logic ALL)
+(assert (= 1.0 (exp 0.0)))
+(check-sat)
+```
+
+Issue #91
+Labels: cvc5, Confirmed, Reals, 1, default, Performance
+link: XXXXX
+```
+[567] % cvc5-1.0.0 -q small.smt2 
+sat
+sat
+[568] % cvc5 -q small.smt2 
+sat
+unknown
+[569] % cat small.smt2 
+(declare-const a Real)
+(assert (<= a (cos a)))
+(check-sat)
+
+(reset)
+
+(declare-const a Real)
+(assert (< a (cos a)))
+(check-sat)
+```
+
+Issue #90
+Labels: cvc5, Confirmed, Invalid model, Reals, default
+link: XXXXX
+```
+[567] % cvc5 -q --check-models small.smt2 
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(cvc5::internal::theory::TheoryModel*, const cvc5::context::CDList<cvc5::internal::NodeTemplate<true> >&, bool) at YYYYY
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (> (arcsin a) (arcsin b))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+Aborted
+[568] % cat small.smt2 
+(declare-const a Real)
+(declare-const b Real)
+(assert (> (arcsin a) (arcsin b)))
+(check-sat)
+```
+
+Issue #89
+Labels: cvc5, Confirmed, Invalid model, Reals, default
+link: XXXXX
+```
+[513] % cvc5 -q --check-models small.smt2 
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(cvc5::internal::theory::TheoryModel*, const cvc5::context::CDList<cvc5::internal::NodeTemplate<true> >&, bool) at YYYYY
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (> (arccos a) (arccos b))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+Aborted
+[514] % cat small.smt2 
+(declare-const a Real)
+(declare-const b Real)
+(assert (> (arccos a) (arccos b)))
+(check-sat)
+```
+
+Issue #88
+Labels: cvc5, Confirmed, Invalid model, Reals, default
+link: XXXXX
+```
+[617] % cvc5 -q --check-models --check-unsat-cores small.smt2 
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(cvc5::internal::theory::TheoryModel*, const cvc5::context::CDList<cvc5::internal::NodeTemplate<true> >&, bool) at YYYYY
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (not (= a 0.0))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+Aborted
+[618] % cat small.smt2 
+(declare-const a Real)
+(assert (not (= a 0.0)))
+(assert (= a (exp (- a))))
+(check-sat)
+```
+
+Issue #87
+Labels: cvc5, Reported, Soundness, Won't fix, Reals, default
+link: XXXXX
+
+```
+[604] % cvc4-1.8 -q small.smt2 
+unsat
+[605] % cvc5n -q small.smt2 
+sat
+[606] % cat small.smt2 
+(declare-const a Real)
+(assert (< (arccos a) 0.0))
+(check-sat)
+```
+
+Issue #86
+Labels: cvc5, Fixed, Soundness, RealInts, default
+link: XXXXX
+
+```
+$cvc5 -q bug.smt2                                                                  
+unsat                                                                              
+$cvc5 --check-unsat-cores -q bug.smt2                                              
+Fatal failure within void cvc5::internal::SolverEngine::checkUnsatCore() at  
+/localYYYYY
+Internal error detected SolverEngine::checkUnsatCore(): produced core was satisfiable.
+[1]    230324 IOT instruction  cvc5 --check-unsat-cores -q bug.smt2                
+$cat bug.smt2                                                                      
+(declare-const a Int)                                                              
+(assert (> (tan (sin (sin a))) a))                                                 
+(check-sat)    
+```
+ This is a soundness bug because tan(sin(sin(-1))) =~ -0.923 > 1.
+
+Issue #85
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+
+```
+[567] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.036s
+user	0m0.020s
+sys	0m0.016s
+[568] % timeout -s 9 60 z3release small.smt2 
+Killed
+[569] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (not (str.prefixof (str.replace a b "") b)))
+(check-sat)
+```
+
+Issue #84
+Labels: Z3, Reported, Bitvectors, 2, Performance
+link: XXXXX
+```
+[520] % time z3release small.smt2 
+sat
+
+real	0m0.067s
+user	0m0.045s
+sys	0m0.020s
+[521] % timeout -s 9 60 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[522] % cat small.smt2 
+(declare-const a (_ BitVec 64))
+(assert (= 0 (bv2nat a)))
+(check-sat)
+```
+
+Issue #83
+Labels: cvc5, Reported, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+[532] % time cvc4-1.8 -q --strings-exp small.smt2 
+unsat
+
+real	0m0.077s
+user	0m0.076s
+sys	0m0.000s
+[533] % timeout -s 9 60 cvc5n -q small.smt2 
+Killed
+[534] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (str.prefixof (str.replace (str.replace a b "A") b a) ""))
+(assert (str.prefixof b a))
+(check-sat)
+```
+
+Issue #82
+Labels: cvc5, Confirmed, Invalid model, Arrays, default
+link: XXXXX
+```
+[514] % cvc5 -q --check-models small.smt2 
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(cvc5::internal::theory::TheoryModel*, const cvc5::context::CDList<cvc5::internal::NodeTemplate<true> >&, bool) at YYYYY
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (= a (store a 0 (bvadd #b1 (select a 1))))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+Aborted
+[515] % cat small.smt2 
+(declare-const a (Array Int (_ BitVec 1)))
+(assert (= a (store a 0 (bvadd #b1 (select a 1)))))
+(check-sat)
+```
+
+Issue #81
+Labels: cvc5, Reported, Strings, default, Performance
+link: XXXXX
+
+```
+[613] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.035s
+user	0m0.017s
+sys	0m0.017s
+[614] % timeout -s 9 60 z3release small.smt2 
+Killed
+[615] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (or (str.<= a b) (str.contains b a)))
+(check-sat)
+```
+
+Issue #80
+Labels: Z3, Reported, Bitvectors, default, Performance
+link: XXXXX
+```
+[589] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.491s
+user	0m0.403s
+sys	0m0.088s
+[590] % timeout -s 9 60 z3release small.smt2 
+Killed
+[591] % cat small.smt2 
+(declare-const a (_ BitVec 64))
+(declare-const b (_ BitVec 64))
+(assert (bvult a (bvurem b a)))
+(check-sat)
+```
+
+Issue #79
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+```
+[574] % time z3-4.8.5 small.smt2 
+sat
+
+real	0m0.020s
+user	0m0.013s
+sys	0m0.004s
+[575] % timeout -s 9 60 z3release small.smt2 
+Killed
+[576] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(declare-const c String)
+(assert (str.prefixof (str.replace a c "") b))
+(assert (str.suffixof a b))
+(check-sat)
+```
+
+Issue #78
+Labels: cvc5, Confirmed, Soundness, Bitvectors, 1
+link: XXXXX
+
+```
+$cvc5 --bv-solver=bitblast-internal -q bug.smt2
+sat
+$cvc5 -q bug.smt2 
+unsat
+$cat bug.smt2 
+( declare-const a (Array (_ BitVec 64) (_ BitVec 64)) ) 
+( declare-const b (_ BitVec 64) ) 
+( assert ( = ( store a #x0000000000000000 #x1111111111111111 ) 
+( store a #x0000000000000000 ( bvadd #x1111111111111111 
+( bvor #x1111111111111111 b ) ) ) ) ) 
+( check-sat )
+$
+```
+
+Issue #77
+Labels: cvc5, Reported, Bitvectors, default, Performance
+link: XXXXX
+```
+[619] % time z3 small.smt2 
+sat
+
+real	0m0.627s
+user	0m0.406s
+sys	0m0.221s
+[620] % timeout -s 9 60 cvc5 -q small.smt2 
+Killed
+[621] % cat small.smt2 
+(declare-const a (_ BitVec 64))
+(assert (bvult a (bvurem #x1111111111111111 a)))
+(check-sat)
+```
+
+Issue #76
+Labels: Z3, Reported, Bitvectors, 2, default, Performance
+link: XXXXX
+```
+[568] % time z3release small.smt2 
+sat
+
+real	0m0.607s
+user	0m0.399s
+sys	0m0.208s
+[569] % timeout -s 9 30 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[570] % cat small.smt2 
+(declare-const a (_ BitVec 64))
+(assert (bvult a (bvurem #x1111111111111111 (bvlshr a #x0000000000000000))))
+(check-sat)
+```
+
+Issue #75
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+
+```
+[541] % time z3-4.8.17 small.smt2 
+sat
+
+real	0m0.650s
+user	0m0.630s
+sys	0m0.020s
+[542] % timeout -s 9 30 z3release small.smt2 
+Killed
+[543] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(declare-const c String)
+(assert (str.prefixof (str.replace a b "") a))
+(assert (str.contains a c))
+(check-sat)
+```
+
+Issue #74
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+[569] % time cvc4-1.8 -q --strings-exp small.smt2 
+unsat
+
+real	0m0.230s
+user	0m0.219s
+sys	0m0.008s
+[570] % timeout -s 9 60 cvc5 -q small.smt2 
+Killed
+[571] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (str.prefixof (str.++ a "A") b))
+(assert (str.<= b a))
+(check-sat)
+```
+
+Issue #73
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+[554] % timeout -s 9 30 cvc5n -q small.smt2 
+Killed
+[555] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(declare-const c String)
+(assert (str.prefixof (str.replace_all (str.replace "A" "" b) a c) b))
+(assert (str.<= a c))
+(check-sat)
+```
+
+Issue #72
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+[570] % time cvc4-1.8 -q --strings-exp small.smt2 
+unsat
+
+real    0m2.583s
+user    0m1.052s
+sys     0m0.004s
+[571] % timeout -s 9 30 cvc5 -q small.smt2 
+Killed
+[572] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(declare-const c String)
+(assert (str.prefixof (str.replace_all (str.replace_all a b a) c a) ""))
+(assert (str.<= "A" a))
+(check-sat)
+```
+
+Issue #71
+Labels: cvc5, Confirmed, Crash, FP, default
+link: XXXXX
+
+```
+[584] % cvc5 -q --check-models small.smt2 
+Fatal failure within static void cvc5::internal::symfpuLiteral::traits::postcondition(const prop&) at /local/suz-local/software/CVC4/src/util/floatingp\
+oint_literal_symfpu_traits.cpp:410
+Check failure
+
+ p
+
+Aborted
+[585] % cat small.smt2 
+(declare-const a Float64)
+(declare-const b Float64)
+(declare-const c Float64)
+(assert (not (= (fp #b1 #b11111111111 #b1111111111111111111111111111111111111111111111111111) (fp.div RTP (fp.max a b) c))))
+(check-sat)
+```
+
+Issue #70
+Labels: cvc5, Confirmed, Invalid model, FP, default
+link: XXXXX
+
+```
+[682] % cvc5 -q --check-models small.smt2 
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(cvc5::internal::theory::TheoryModel*, const c\
+vc5::context::CDList<cvc5::internal::NodeTemplate<true> >&, bool) at YYYYY
+s.cpp:146
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (= c (fp.min a (fp.min c b)))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+Aborted
+[683] % cat small.smt2 
+(declare-const a Float64)
+(declare-const b Float64)
+(declare-const c Float64)
+(assert (= c (fp #b0 #b00000000000 #b0000000000000000000000000000000000000000000000000000)))
+(assert (= c (fp.min a (fp.min c b))))
+(check-sat)
+```
+
+Issue #69
+Labels: Z3, Reported, Ints, default, Performance
+link: XXXXX
+
+```
+[628] % time z3release small.smt2 
+sat
+
+real    0m0.111s
+user    0m0.052s
+sys     0m0.004s
+[629] % timeout -s 9 30 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[630] % cat small.smt2 
+(declare-const a Int)
+(declare-const b Int)
+(assert (> 0 (- (* (mod b a) a) a)))
+(check-sat)
+```
+
+Issue #68
+Labels: Z3, Reported, Ints, default, Performance
+link: XXXXX
+
+```
+[639] % time z3release small.smt2 
+sat
+
+real    0m0.102s
+user    0m0.015s
+sys     0m0.027s
+[640] % timeout -s 9 30 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[641] % cat small.smt2 
+(declare-const a Int)
+(assert (> a (div (* a (abs a)) 1)))
+(check-sat)
+```
+
+Issue #67
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+
+It appears to reproduce for at least 4.8.17 and later.
+
+```
+[528] % time cvc5 -q small.smt2 
+sat
+
+real	0m0.007s
+user	0m0.003s
+sys	0m0.003s
+[529] % timeout -s 9 30 z3release small.smt2 
+Killed
+[530] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(declare-const c String)
+(assert (str.prefixof (str.replace_all (str.replace b a "") "" c) c))
+(assert (str.contains c a))
+(check-sat)
+```
+
+Issue #65
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+```
+[653] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.091s
+user	0m0.025s
+sys	0m0.017s
+[654] % timeout -s 9 30 z3release small.smt2 
+Killed
+[655] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (str.<= a (str.replace b a b)))
+(check-sat)
+```
+
+Issue #64
+Labels: Z3, Reported, Bitvectors, default, Performance
+link: XXXXX
+
+```
+[669] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.289s
+user	0m0.090s
+sys	0m0.011s
+[670] % timeout -s 9 30 z3release small.smt2 
+Killed
+[671] % cat small.smt2 
+(declare-const a (_ BitVec 32))
+(declare-const b (_ BitVec 32))
+(assert (bvult a (bvor (bvurem b a) #x00000000)))
+(check-sat)
+```
+
+Issue #63
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+
+```
+[704] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.513s
+user	0m0.215s
+sys	0m0.011s
+[705] % timeout -s 9 30 z3release small.smt2 
+Killed
+[706] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(declare-const c String)
+(assert (str.<= a (str.replace "A" "" (str.replace b c ""))))
+(check-sat)
+```
+
+Issue #62
+Labels: Z3, Reported, Ints, 2, Performance
+link: XXXXX
+
+```
+[507] % timeout -s 9 30 z3release tactic.default_tactic=smt sat.euf=true small.smt2 
+Killed
+[508] % time z3-4.11.2 tactic.default_tactic=smt sat.euf=true small.smt2 
+sat
+
+real	0m0.343s
+user	0m0.124s
+sys	0m0.016s
+[509] % cat small.smt2 
+(declare-const a Int)
+(assert (= (mod (* a a) a) 1))
+(check-sat)
+```
+
+Issue #61
+Labels: Z3, Reported, Strings, default, Performance
+link: XXXXX
+```
+
+OS: Ubuntu 22.04
+
+[523] % time z3-4.11.2 small.smt2 
+sat
+
+real	0m0.112s
+user	0m0.035s
+sys	0m0.009s
+[524] % timeout -s 9 10 z3release small.smt2 
+Killed
+[525] % cat small.smt2 
+(declare-const a String)
+(declare-const b String)
+(assert (str.<= a b))
+(assert (str.contains b a))
+(check-sat)
+```
+
+Issue #60
+Labels: Z3, Confirmed, Invalid model, FP, default
+link: XXXXX
+
+```
+$z3release model_validate=true bug.smt2
+sat
+(error "line 7 column 12: an invalid model was generated")
+$cat bug.smt2 
+( declare-const a0 (_ FloatingPoint 11 53) ) 
+( declare-const a1 (_ FloatingPoint 11 53) ) 
+( declare-const a3 (_ FloatingPoint 11 53) ) 
+( declare-const a4 (_ FloatingPoint 11 53) ) 
+( assert ( = (fp #b0 #b00000000000 #b0000000000000000000000000000000000000000000000000000) 
+( fp.sub RNA a4 ( fp.fma RTN a3 a1 a0 ) ) ) ) 
+( check-sat )
+$
+```
+
+Issue #59
+Labels: cvc5, Confirmed, Crash, FP, default
+link: XXXXX
+```
+$cvc5 -q --check-models new_bug.smt2 
+Fatal failure within static void cvc5::internal::symfpuLiteral::
+traits::postcondition(const prop&) 
+at src/util/floatingpoint_literal_symfpu_traits.cpp:410
+Check failure
+
+ p
+
+[1]    2908759 IOT instruction  cvc5 -q --check-models new_bug.smt2
+$cat new_bug.smt2 
+( declare-const a (_ FloatingPoint 11 53) ) 
+( declare-const b (_ FloatingPoint 11 53) ) 
+( assert ( = b ( fp.div RTZ b ( fp.div RTZ a b ) ) ) ) 
+( check-sat )
+```
+
+Issue #58
+Labels: cvc5, Confirmed, Invalid model, Arrays, default
+XXXXX
+
+```
+$cvc5 -q --check-models bug.smt2
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(
+cvc5::internal::theory::TheoryModel*, const cvc5::context::
+CDList<cvc5::internal::NodeTemplate<true> >&, bool) at cvc5/src/smt/check_models.cpp:146
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (= a (store a 
+(bvneg (bvneg #b0001000100010001000100010001000100010001000100010001000100010001)) 
+(bvadd #b0001000100010001000100010001000100010001000100010001000100010001 
+(select a #b0000000000000000000000000000000000000000000000000000000000000000))))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+[1]    59876 IOT instruction  cvc5 -q --check-models bug.smt2
+$cat bug.smt2 
+(declare-const a (Array (_ BitVec 64) (_ BitVec 64)) ) 
+(declare-const b (_ BitVec 64) ) 
+(assert ( = a ( store a ( bvneg ( bvneg #x1111111111111111 ) ) 
+        ( bvadd #x1111111111111111 ( select a #x0000000000000000 ) ) ) ) ) 
+( check-sat )
+$
+```
+
+Issue #57
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+$timeout -s 9 30 cvc5 -q 4.smt2
+[1]    2201608 killed     timeout -s 9 30 cvc5 -q 4.smt2
+$cat 4.smt2
+(declare-const a String)
+(assert (str.contains (str.replace_all a "a" "") "a"))
+(check-sat)
+$
+```
+
+Issue #56
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+$timeout -s 9 30 cvc5 -q 3.smt2                                                 
+[1]    2199666 killed     timeout -s 9 30 cvc5 -q 3.smt2                        
+$cat 3.smt2                                                                     
+(declare-const a String)                                                        
+(assert (str.prefixof "a" (str.replace_all "a" "a" (str.replace_all a "a" ""))))
+(check-sat)                                                                     
+$                                                                              
+```
+
+Issue #55
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+ $timeout -s 9 30 cvc5 -q 2.smt2                                                 
+[1]    2189669 killed     timeout -s 9 30 cvc5 -q 2.smt2                        
+$cat 2.smt2                                                                     
+(declare-const a String)                                                        
+(declare-const b String)                                                        
+(assert (str.<= (str.++ a (str.++ b "a")) a))                                   
+(check-sat)                                                                     
+$                                                                                                                                        
+                                                                               
+```
+
+Issue #54
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+$timeout -s 9 30 cvc5 -q 1.smt2
+[1]    2188330 killed     timeout -s 9 30 cvc5 -q 1.smt2
+$cat 1.smt2
+(declare-const a String)
+(assert (str.prefixof "a" (str.replace_all a "a" "")))
+(check-sat)
+$
+```
+
+Issue #53
+Labels: cvc5, Confirmed, Strings, default, Performance
+link: XXXXX
+```
+$timeout -s 9 30 cvc5 -q 2.smt2                                                 
+[1]    2187005 killed     timeout -s 9 30 cvc5 -q 2.smt2                        
+$cat 2.smt2                                                                     
+(declare-const a String)                                                        
+(declare-const b String)                                                        
+(assert (str.<= (str.++ a ( str.++ b "a")) a))                                  
+(check-sat)                                                                     
+$
+```
+
+Issue #52
+Labels: cvc5, Confirmed, Bitvectors, default, Performance
+link: XXXXX
+```
+
+$timeout -s 9 60 z3release 1.smt2
+[1]    2182745 killed     timeout -s 9 60 z3release 2.smt2
+$cat 2.smt2
+(declare-const a (_ BitVec 64))
+(assert (= a (bvurem (bvnot a) a)))
+(check-sat)
+```
+
+Issue #51
+Labels: cvc5, Confirmed, Reals, default, Performance
+link: XXXXX
+```
+$timeout -s 9 30 cvc5 -q 1.smt2                                                 
+[1]    2203675 killed     timeout -s 9 30 cvc5 -q 1.smt2                        
+$cat 1.smt2                                                                     
+(declare-const b Real)                                                          
+(assert (>= (- b) (cos 1.0)))                                                   
+(check-sat)                                                                     
+```
+
+Issue #50
+Labels: cvc5, Confirmed, Ints, default, Performance
+link: XXXXX
+```
+$timeout -s 9 60 cvc5 -q bug.smt2                                               
+[1]    2164939 killed     timeout -s 9 60 cvc5 -q bug.smt2                      
+$cat bug.smt2                                                                   
+(declare-const a Int)                                                           
+(assert (not (is_int (* (/ a a) a))))                                           
+(check-sat)                                                                     
+$     
+```
+
+Issue #49
+Labels: Z3, Fixed, Bitvectors, default, Performance
+link: XXXXX
+```
+$timeout -s 9 60 z3release 1.smt2
+[1]    2182745 killed     timeout -s 9 60 z3release 2.smt2
+$cat 2.smt2
+(declare-const a (_ BitVec 64))
+(assert (= a (bvurem (bvnot a) a)))
+(check-sat)                                                                  
+$                                                                  
+```
+
+Issue #48
+Labels: Z3, Fixed, Strings, default, Performance
+link: XXXXX
+```
+$timeout -s 9 30 z3release 2.smt2                                               
+[1]    2184751 killed     timeout -s 9 30 z3release 2.smt2                      
+$cat 2.smt2                                                                     
+(declare-const a String)                                                        
+(declare-const b String)                                                        
+(assert (str.contains (str.replace a b a) a))                                   
+(check-sat)
+```
+
+Issue #47
+Labels: Z3, Fixed, Strings, default, Performance
+link: XXXXX
+
+```
+XXXXX
+
+$timeout -s 9 30 z3release 1.smt2                                               
+[1]    2184525 killed     timeout -s 9 30 z3release 1.smt2                      
+$cat 1.smt2                                                                     
+(declare-const a String)                                                        
+(declare-const b String)                                                        
+(assert (str.contains (str.replace a "a" a) a))                                 
+(check-sat)
+```
+
+Issue #46
+Labels: Z3, Fixed, Bitvectors, default, Performance
+link: XXXXX
+```
+ff875c936fdf1da3c863a7cda23ac2e38fddd37f                                        
+$timeout -s 9 60 z3release 1.smt2                                               
+[1]    2182138 killed     timeout -s 9 60 z3release 1.smt2                      
+$cat 1.smt2                                                                     
+(declare-const a (_ BitVec 64))                                                 
+(assert (= #x0000000000000000 (bvurem (bvnot #x0000000000000000) a)))           
+(check-sat)                                                                     
+$
+```
+
+Issue #45
+Labels: Z3, Fixed, Ints, default, Performance
+link: XXXXX
+
+```
+$timeout -s 9 60 z3release bug.smt2                                                 
+[1]    2121562 killed     timeout -s 9 60 z3release bug.smt2                       
+$cat bug.smt2                                                                      
+(declare-const a Int)                                                              
+(assert (not (is_int (- (* a a )))))                                               
+(check-sat)                                                                        
+$
+```
+
+Issue #43
+Labels: cvc5, Fixed, Crash, Ints, 1
+link: XXXXX
+```
+$cvc5 -q --dump-difficulty bug.smt2
+Fatal failure within cvc5::internal::NodeTemplate<ref_count>::NodeTemplate(const   
+ cvc5::internal::NodeTemplate<ref_count>&) [with bool ref_count = false] at  
+ /localYYYYY   
+Check failure
+
+ d_nv->d_rc > 0
+TNode constructed from TNode with rc == 0
+[1]    2725663 IOT instruction  cvc5 -q --dump-difficulty bug.smt2 
+$cat bug.smt2
+(declare-const b Int) 
+(assert (= (* b b) (+ b 1))) 
+(check-sat)
+```
+
+Issue #42
+Labels: cvc5, Fixed, Crash, Reals, 1
+link: XXXXX
+
+```
+$cvc5 --produce-interpolants bug.smt2
+Fatal failure within virtual bool cvc5::internal::theory::arith::TheoryArith::collectModelValues(cvc5::internal::theory::TheoryModel*, const std::set<cvc5::internal::NodeTemplate<true> >&) at /localYYYYY
+Check failure
+
+ false
+A model equality could not be asserted: termITE_5 == 0.0
+
+[1]    619484 abort      cvc5 --produce-interpolants bug.smt2
+$cat bug.smt2 
+(set-logic QF_NRA) 
+(declare-const a Real) 
+(declare-const b Real) 
+(assert (> (/ (/ b b) (/ b b)) (/ b (/ b b)))) 
+(check-sat)
+$
+```
+
+Issue #41
+Labels: cvc5, Fixed, Crash, Reals, 1
+link: XXXXX
+```
+$cvc5 -q --sygus-inst --check-unsat-cores bug.smt2
+Fatal failure within virtual bool 
+  cvc5::internal::theory::arith::TheoryArith::collectModelValues(cvc5::internal::theory::TheoryModel*, 
+const  std::set<cvc5::internal::NodeTemplate<true> >&) at  
+ /localYYYYY
+Check failure
+
+ false
+A model equality could not be asserted: nonlinearDiv_7 == (/ (- 1) 4)
+
+[1]    2586871 abort      cvc5 -q --sygus-inst --check-unsat-cores bug.smt2
+$cat bug.smt2                                     
+(set-logic QF_NRA) 
+(declare-const a Real) 
+(declare-const b Real) 
+(assert (> 1.0 (/ (/ b a) (/ 0.0 b)))) 
+(check-sat)
+$
+```
+
+Issue #40
+Labels: cvc5, Fixed, Crash, Reals, 1
+link: XXXXX
+```
+$cvc5 --decision=stoponly --strings-exp --check-unsat-cores bug.smt2
+Fatal failure within virtual bool cvc5::internal::theory::arith::TheoryArith::collectModelValues( 
+cvc5::internal::theory::TheoryModel*, const std::set<cvc5::internal::NodeTemplate<true> >&) at  
+ /localYYYYY
+Check failure
+
+ false
+A model equality could not be asserted: nonlinearDiv_7 == 1.0
+
+[1]    1252903 abort      cvc5 --decision=stoponly --strings-exp --check-unsat-cores bug.smt2
+$cat bug.smt2 
+(set-logic QF_NRA) 
+(declare-const a Real) 
+(declare-const b Real) 
+(assert (> (/ (/ b b) (/ b b)) (/ (/ 0.0 a) b))) 
+(check-sat)
+$
+```
+
+Issue #39
+Labels: Z3, Fixed, Invalid model, FP, 1
+link: XXXXX
+```
+$z3release model_validate=true rewriter.ite_extra_rules=true bug3.smt2          
+sat                                                                             
+(error "line 4 column 10: an invalid model was generated")                      
+$z3release model_validate=true bug3.smt2                                        
+sat                                                                             
+$cat bug3.smt2                                                                  
+(declare-const a (_ FloatingPoint 11  53))                                      
+(declare-const b (_ FloatingPoint 11  53))                                      
+(assert (fp.eq (fp.max b a) (fp.fma RTZ b b b)))                                
+(check-sat)                                                                     
+```
+
+Issue #38
+Labels: Z3, Fixed, Invalid model, FP, 1
+link: XXXXX
+```
+$z3release model_validate=true bug2.smt2                                        
+sat                                                                             
+$z3release model_validate=true rewriter.flat=false bug2.smt2                    
+sat                                                                             
+(error "line 4 column 10: an invalid model was generated")                      
+$cat bug2.smt2                                                                  
+(declare-const a (_ FloatingPoint 11  53))                                      
+(declare-const b (_ FloatingPoint 11  53))                                      
+(assert (fp.eq (fp.max b b) (fp.fma RTZ b b b)))                                
+(check-sat)
+```
+
+Issue #37
+Labels: Z3, Fixed, Invalid model, FP, 1
+link: XXXXX
+
+```
+$z3release model_validate=true rewriter.elim_and=true bug1.smt2                 
+sat                                                                             
+(error "line 5 column 10: an invalid model was generated")                      
+$z3release model_validate=true rewriter.flat=false bug1.smt2                    
+sat                                                                             
+$cat bug1.smt2                                                                  
+(declare-const a (_ FloatingPoint 11  53))                                      
+(declare-const b (_ FloatingPoint 11  53))                                      
+(assert (fp.eq (fp.max b a) (fp.fma RTN a b                                     
+(fp #b0 #b00000000000 #b0000000000000000000000000000000000000000000000000000))))
+(check-sat)     
+```
+
+Issue #36
+Labels: cvc5, Fixed, Crash, Reals, 1
+link: XXXXX
+```
+$cvc5 --produce-abducts bug.smt2
+Fatal failure within virtual bool cvc5::internal::theory::arith::TheoryArith::collectModelValues(
+cvc5::internal::theory::TheoryModel*, const std::set<cvc5::internal::NodeTemplate<true> >&) at 
+/localYYYYY
+Check failure
+
+ false
+A model equality could not be asserted: termITE_5 == (/ (- 1) 2)
+
+[1]    3273714 abort      cvc5 --produce-abducts bug.smt2
+$cat bug.smt2 
+(set-logic QF_NRA) 
+(declare-const a Real) 
+(declare-const b Real) 
+(assert (> (/ (/ b b) (/ b b)) (/ (/ 1.0 0.0) (/ 1.0 b)))) 
+(check-sat)
+```
+
+Issue #35
+Labels: cvc5, Fixed, Crash, Reals, default
+```
+$cvc5 -q bug.smt2
+Fatal failure within virtual bool cvc5::internal::theory::arith::TheoryArith::collectModelValues(
+cvc5::internal::theory::TheoryModel*, const std::set<cvc5::internal::NodeTemplate<true> >&)
+at /localYYYYY
+Check failure
+
+ false
+A model equality could not be asserted: (SKOLEM_FUN_DIV_BY_ZERO_2 (* a a)) == (/ 1 4)
+
+[1]    4149641 abort      cvc5 -q bug.smt2
+$cat bug.smt2 
+(set-logic QF_NRA) 
+(declare-const a Real)  
+(declare-const b Real) 
+(assert (> (/ 1.0 (/ a b)) (/ (* a a) a))) 
+(check-sat)
+```
+
+Issue #34
+Labels: cvc5, Confirmed, Duplicate, Crash, Arrays, 1
+link: XXXXX
+```
+$cvc5 -q --fmf-fun --check-unsat-cores bug.smt2 
+Fatal failure within void cvc5::internal::theory::ModelManager::postProcessModel(bool) at /localYYYYY
+Check failure
+
+ d_modelBuiltSuccess
+
+[1]    3814069 abort      cvc5 -q --fmf-fun --check-unsat-cores bug.smt2
+$cat bug.smt2 
+(declare-const  a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const  b (_ BitVec 64)) 
+(assert (= (store a (select a b) (bvor b b)) 
+(store (store a b b) (select a #x0000000000000000) (bvadd #x1111111111111111 b)))) 
+(check-sat)
+$
+```
+
+Issue #33
+Labels: cvc5, Confirmed, Duplicate, Crash, Arrays, 1
+link: XXXXX
+```
+$cvc5 -q --fmf-fun-rlv --check-unsat-cores bug.smt2   
+Fatal failure within void cvc5::internal::theory::ModelManager::postProcessModel(bool). 
+ at src/theory/model_manager.cpp:120  
+Check failure
+
+ d_modelBuiltSuccess
+
+[1]    3185969 abort      cvc5 -q --fmf-fun-rlv --check-unsat-cores bug.smt2 
+$cat bug.smt2 
+(declare-const  a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const  b (_ BitVec 64)) 
+(assert (= (store a (select a b) (bvor b b)) 
+(store (store a b b) (select a #x0000000000000000) (bvadd #x1111111111111111 b))))  
+(check-sat)
+```
+
+Issue #32
+Labels: Z3, Invalid model, Won't fix, Reals, 2
+link: XXXXX
+
+```
+$z3release model_validate=true tactic.default_tactic=smt sat.euf=true bug.smt2 
+sat
+(error "line 5 column 10: an invalid model was generated")
+$cat bug.smt2                                                                  
+(declare-const a Real)
+(declare-const b Real)
+(assert (not (= 0 b)))
+(maximize a)
+(check-sat)
+```
+
+Issue #31
+Labels: Z3, Fixed, Soundness, Ints, 2
+link: XXXXX
+```
+$z3release tactic.default_tactic=smt sat.euf=true bug.smt2
+unsat
+$z3release bug.smt2                                       
+sat
+$cat bug.smt2 
+(declare-const a Int) 
+(assert (> (- a) (mod 1 (- 1)))) 
+(check-sat)
+$
+```
+
+Issue #30
+Labels: Z3, Fixed, Invalid model, FP, default
+link:XXXXX
+
+```
+$z3release model_validate=true bug.smt2
+sat
+(error "line 4 column 10: an invalid model was generated")
+$cat bug.smt2 
+(declare-const a (_ FloatingPoint 11  53))
+(declare-const b (_ FloatingPoint 11  53))
+(assert (fp.eq (fp.max b b) (fp.fma RTZ b a b)))
+(check-sat)
+$
+```
+
+Issue #29
+Labels: cvc5, Fixed, Crash, Arrays, 1
+link: XXXXX
+```
+$cvc5 -q --finite-model-find --check-unsat-cores bug.smt2
+Fatal failure within void cvc5::internal::theory::ModelManager::postProcessModel(bool) at 
+src/theory/model_manager.cpp:120
+Check failure
+
+ d_modelBuiltSuccess
+
+[1]    3457965 abort      cvc5 -q --finite-model-find --check-unsat-cores bug.smt2
+$cat bug.smt2 
+(declare-const a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const b (_ BitVec 64)) 
+(assert (= (store a (select a b) (bvor b b)) (store (store a b b) 
+        (select a #x1111111111111111) (bvadd b #x1111111111111111)))) 
+(check-sat)
+```
+
+Issue #28
+Labels: cvc5, Confirmed, Invalid model, Arrays, 1, major
+link: XXXXX
+
+```
+$cvc5 -q --check-models --check-proofs bug.smt2 
+Fatal failure within void cvc5::internal::smt::CheckModels::checkModel(cvc5::internal::theory::
+TheoryModel*, const cvc5::context::CDList<cvc5::internal::NodeTemplate<true> >&, bool)  
+ at solvers/cvc5/src/smt/check_models.cpp:134. 
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:  
+assertion:     (let ((_let_1 (store a b b))) (let ((_let_2 (select a b))) (= (store _let_1 _let_2 _let_2)  
+(store _let_1 (bvurem b b) 
+(bvadd #b0001000100010001000100010001000100010001000100010001000100010001 b)))))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+[1]    4157638 abort      cvc5 -q --check-models --check-proofs bug.smt2
+$cat bug.smt2 
+(declare-const  a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const  b (_ BitVec 64)) 
+(assert (= (store (store a b b) (select a b) (select a b)) (store (store a b b) 
+        (bvurem b b)(bvadd #x1111111111111111 b)))) 
+(check-sat)
+```
+
+Issue #27
+Labels: cvc5, Fixed, Crash, Strings, 1
+link: XXXXX
+```
+$cvc5 --model-cores=simple --check-models -q bug.smt2
+Fatal failure within bool cvc5::internal::ModelCoreBuilder::setModelCore(const std::vector
+<cvc5::internal::NodeTemplate<true> >&, cvc5::internal::theory::TheoryModel*, cvc5::internal::
+options::ModelCoresMode) at src/smt/model_core_builder.cpp:96
+Check failure
+
+ minimized
+cannot compute model core, since model does not satisfy input!
+[1]    16106 abort      cvc5 --model-cores=simple --check-models -q bug.smt2
+$cat bug.smt2 
+(declare-fun a () (Bag String)) 
+(assert (= (bag.choose a) "")) 
+(check-sat)
+```
+
+Issue #26
+Labels: cvc5, Fixed, Crash, RealInts, default
+link: XXXXX
+```
+$cvc5 -q bug.smt2
+Fatal failure within bool cvc5::internal::theory::Theory::isLegalElimination(cvc5::internal::TNode, 
+cvc5::internal::TNode) at src/theory/theory.cpp:325
+Check failure
+
+ false
+isLegalElimination for disequal typed terms b -> (* a a)
+[1]    18310 abort      cvc5 -q bug.smt2
+$cat bug.smt2    
+(declare-const a Real) 
+(declare-const b Int) 
+(assert (= (to_real b) (* a a)))
+(check-sat
+```
+
+Issue #25
+Labels: cvc5, Fixed, Crash, Strings, 1
+link: XXXXX
+```
+$cvc5 --learned-rewrite -q bug.smt2
+Fatal failure within virtual cvc5::internal::preprocessing::PreprocessingPassResult 
+cvc5::internal::preprocessing::passes::LearnedRewrite::applyInternal(
+cvc5::internal::preprocessing::AssertionPipeline*) at  /src/preprocessing/passes/learned_rewrite.cpp:115
+Check failure
+
+ originLit.find(origin)!=originLit.end()
+
+[1]    711719 abort      cvc5 --learned-rewrite -q bug.smt2
+$cat bug.smt2 
+(declare-const a String) 
+(assert (str.is_digit a)) 
+(check-sat)
+$
+```
+
+Issue #24
+Labels: cvc5, Fixed, Crash, RealInts, 1
+link: XXXXX
+
+```
+$cvc5 --learned-rewrite -q bug.smt2
+Fatal failure within cvc5::internal::theory::arith::linear::Polynomial::Polynomial(cvc5::internal::TNode) 
+at  /theory/arith/linear/normal_form.h:802
+Check failure
+
+ isMember(getNode())
+Bad polynomial member (+ (* (- 1) a) (/ (to_real b) 0))
+[1]    23519 abort      cvc5 --learned-rewrite -q bug.smt2
+$cat bug.smt2 
+(declare-const a Real)
+(declare-const b Int)
+(assert (> a (/ (to_real b) (to_real 0))))
+(check-sat)
+$
+```
+
+Issue #23
+Labels: Z3, Invalid model, Won't fix, Reals, 2
+link: XXXXX
+```
+$z3release model_validate=true tactic.default_tactic=smt sat.euf=true bug.smt2
+sat
+(error "line 5 column 10: an invalid model was generated")
+$cat bug.smt2 
+(declare-const a Real) 
+(declare-const b Real) 
+(assert (> (to_int b) (+ 1 0))) 
+(maximize a) 
+(check-sat)
+$
+```
+
+Issue #22
+Labels: Z3, Invalid model, Won't fix, Reals, 2
+link:  XXXXX
+```
+$z3release model_validate=true tactic.default_tactic=smt sat.euf=true bug.smt2
+sat
+(error "line 4 column 10: an invalid model was generated")
+$cat bug.smt2 
+(declare-const a Real) 
+(assert (< (/ 0.0 0.0) 0.0)) 
+(maximize a) 
+(check-sat)
+$   
+```
+
+Issue #21
+Labels: cvc5, Fixed, Crash, Ints, 1
+link: XXXXX
+
+```
+$cvc5 --produce-abducts -q bug.smt2
+cvc5 suffered a segfault.
+Offending address is 0x8
+Looks like a NULL pointer was dereferenced.
+[1]    2625338 segmentation fault  cvc5 --produce-abducts -q bug.smt2
+$cat bug.smt2                      
+(declare-const a Int) 
+(declare-const b Int) 
+(assert (> (to_real (abs b)) (/ (to_real a) (to_real b)))) 
+(check-sat)
+$
+```
+
+Issue #20
+Labels: cvc5, Fixed, Crash, Ints, default
+link: XXXXX
+```
+[526] % cvc5 -q small.smt2 
+Fatal failure within cvc5::internal::Node cvc5::internal::theory::SubstitutionMap::apply(cvc5::internal::TNode, cvc5::internal::theory::Rewriter*, std::set<cvc5::internal::NodeTemplate<false> >*, const cvc5::internal::theory::SubstitutionMap::ShouldTraverseCallback*) at /local/suz-local/software/CVC4/src/theory/substitutions.cpp:237
+Check failure
+
+ r->rewrite(result) == result
+Non-idempotent rewrite: (= (* b a) 0) --> (= (* a b) 0)
+Aborted
+[527] % cat small.smt2 
+(declare-fun a () Int)
+(declare-fun b () Int)
+(assert (= 0 (* b (/ a (- 1)))))
+(check-sat)
+```
+
+Issue #17
+Labels: Z3, Confirmed, Invalid model, Won't fix, Reals, 2
+link: XXXXX
+
+```
+$z3release model_validate=true bug.smt2                                                       
+sat
+$z3release model_validate=true tactic.default_tactic=smt sat.euf=true bug.smt2
+sat
+(error "line 5 column 10: an invalid model was generated")
+$cat bug.smt2 
+(declare-const a Real) 
+(declare-const b Real) 
+(assert (> b (to_real (mod 0 a)))) 
+(maximize a) 
+(check-sat)
+$
+```
+
+Issue #16
+Labels: cvc5, Fixed, Soundness, Strings, 1
+link: XXXXX
+
+```
+$cvc5 --strings-eager-len-re bug.smt2 
+unsat
+$cvc5 bug.smt2                       
+sat
+$cat bug.smt2 
+(set-logic QF_S) 
+(declare-const a String) 
+(declare-const b String) 
+(assert (str.in_re b (re.++ (re.opt re.allchar) 
+        (re.diff (re.* re.none) (str.to_re b))))) 
+(check-sat)
+```
+
+Issue #15
+Labels: cvc5, Confirmed, Soundness, Reals, 1
+link: XXXXX
+```
+$cvc5 -q bug.smt2                                                               
+sat                                                                             
+$cvc5 -q --nl-icp bug.smt2                                                      
+unsat                                                                           
+$cat bug.smt2
+(declare-const a Real) 
+(declare-const b Real)                                                                   
+(assert (< (- (/ 0.0 0.0)) (/ (* 0.0 0.0) (/ 0.0 0.0))))                           
+(check-sat)
+```
+
+Issue #14
+Labels: cvc5, Confirmed, Soundness, Reals, 1
+link: XXXXX
+```
+$cvc5 -q bug.smt2                                                               
+sat                                                                             
+$cvc5 -q --nl-icp bug.smt2                                                      
+unsat                                                                           
+$cat bug.smt2                                                                   
+(declare-const a Real)
+(declare-const b Real)                                                                                                                   
+(assert (< (- (/ 0.0 0.0)) (/ (- a a) (/ 0.0 0.0))))                            
+(check-sat)                                                                     
+$ 
+```
+
+Issue #13
+Labels: cvc5, Fixed, Soundness, Arrays, default
+link: XXXXX
+```
+$cvc5 -q bug.smt2                                                                  
+unsat                                                                              
+$cvc5 -q --check-unsat-cores bug.smt2                                              
+sat                                                                                
+$cat bug.smt2                                                                      
+(declare-const  a (Array (_ BitVec 64) (_ BitVec 64)))                             
+(declare-const  b (_ BitVec 64))                                                   
+(assert (= (store a (bvadd b b) (bvadd b #x1111111111111111))                      
+(store (store a #x1111111111111111 b) (bvadd b b) (bvneg b))))                     
+(check-sat)  
+```
+
+Issue #12
+Labels: cvc5, Confirmed, flaky, Crash, FP, default
+Commit: XXXXX
+```
+$cvc5 -q --check-models bug.smt2 
+Fatal failure within static void cvc5::symfpuLiteral::traits::postcondition(const prop&) 
+at /localYYYYY
+Check failure
+
+ p
+
+[1]    3531 abort      cvc5 -q --check-models bug.smt2
+$cat bug.smt2 
+(declare-const a (_ FloatingPoint 11  53))
+(declare-const b (_ FloatingPoint 11  53))
+(assert (fp.eq (fp.sub RTN b b) (fp.div RNA a b)))
+(check-sat)
+```
+
+Issue #11
+Labels: cvc5, Confirmed, Soundness, Reals, 1
+link: cvc5/cvc5-projects#470
+```
+$cvc5 -q bug.smt2
+sat                                     
+$cvc5 -q --nl-icp bug.smt2 
+unsat 
+$cat bug.smt2  
+(declare-const a Real) 
+(declare-const b Real)
+(assert (< (- (- 0) (div 1 0)) (div (to_int (+ 1.0 0.0)) (div 1 0))))
+(check-sat)
+```
+
+Issue #10
+Labels: cvc5, Confirmed, flaky, Crash, FP, default
+link: XXXXX
+```
+$cvc5 --check-models -q bug.smt2                                                   
+Fatal failure within static void cvc5::symfpuLiteral::traits::invariant(const prop&) 
+at /localYYYYY
+Check failure                                                                      
+                                                                                   
+ p                                                                                 
+                                                                                   
+[1]    11953 abort      cvc5 --check-models -q bug.smt2                            
+$cat bug.smt2                                                                      
+(declare-const a (_ FloatingPoint 11  53))                                         
+(declare-const b (_ FloatingPoint 11  53))                                         
+(assert (fp.leq (fp.sub RTZ b                                                      
+(fp #b0 #b00000000000 #b0000000000000000000000000000000000000000000000000000))  
+(fp.div RTN b a)))                                                                 
+(check-sat)
+```
+
+Issue #9
+Labels: cvc5, Fixed, Soundness, Ints, 1
+link: XXXXX
+```
+$cvc5 -q bug.smt2                                                               
+sat                                                                             
+$cvc5 --nl-icp -q bug.smt2                                                      
+unsat                                                                           
+$cat bug.smt2                                                                   
+(declare-const a Int)                                                           
+(declare-const b Int)                                                           
+(assert (> (- a) (* (+ a a) (+ a 1))))                                          
+(check-sat)                                                                     
+$ 
+```
+
+
+Issue #8
+Labels: cvc5, Fixed, Soundness, Reals, default
+link: XXXXX
+```
+[527] % cvc5 -q small.smt2 
+sat
+[528] % cvc5 -q --check-unsat-cores small.smt2 
+unsat
+[529] % cat small.smt2 
+(declare-fun a () Real)
+(declare-fun b () Real)
+(assert (and (= a 0) (= b (cos a))))
+(check-sat)
+```
+
+Issue #7
+Labels: Z3, Fixed, Crash, Ints, 1
+link: XXXXX
+```
+$z3release model_validate=true smt.arith.nl.expp=true bug.smt2 
+ASSERTION VIOLATION
+File: ../src/math/lp/nla_core.cpp
+Line: 1420
+NOT IMPLEMENTED YET!
+Z3 4.8.15.0
+Please file an issue with this message and more detail about how you encountered it at XXXXX
+$cat bug.smt2 
+(declare-const a Int) (declare-const b Int) (assert (> (- b) (* b b))) (check-sat)%
+```
+
+Issue #6
+Labels: cvc5, Confirmed, Invalid model, Arrays, 1
+link: XXXXX
+```
+$cvc5 -q bug.smt2                                   
+sat
+$cvc5 --check-models --check-unsat-cores -q bug.smt2                      
+sat
+$cvc5 --arrays-eager-lemmas --check-unsat-cores --check-models -q bug.smt2 
+Fatal failure within void cvc5::smt::CheckModels::checkModel(cvc5::theory::TheoryModel*, const  
+...
+[1]    653632 abort      cvc5 --arrays-eager-lemmas --check-unsat-cores --check-models -q bug.smt2. 
+$cat bug.smt2 
+(declare-const a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const b (_ BitVec 64)) 
+(assert (= (store (store a b b) (select a b) (select a #x1111111111111111)) 
+(store (store a #x1111111111111111 #x0000000000000000) (bvudiv b b) 
+(bvadd b #x1111111111111111)))) 
+(check-sat)
+$
+```
+
+Issue #5
+Labels: cvc5, Confirmed, Soundness, Arrays, 1
+link: XXXXX
+```
+$cvc5 --arrays-weak-equiv -q bug.smt2
+unsat
+$cvc5 -q bug.smt2                    
+sat
+$cat bug.smt2 
+(declare-const  a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const  b (_ BitVec 64)) 
+(assert (= (store (store a b b) (select a b) (select a #x1111111111111111)) 
+(store (store a b b) (bvlshr b #x0000000000000000) 
+(bvlshr #x1111111111111111 b)))) 
+(check-sat)
+$
+```
+
+Issue #4
+Labels: cvc5, Fixed, Invalid model, Arrays, 1
+link: XXXXX
+
+```
+$cvc5 -q --check-models bug.smt2                     
+sat
+$cvc5 -q --arrays-weak-equiv --check-models bug.smt2 
+Fatal failure within void cvc5::smt::CheckModels::checkModel(cvc5::theory::TheoryModel*, 
+const cvc5::context::CDList<cvc5::NodeTemplate<true> >&, bool) at 
+/localYYYYY 
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     
+(= (store a #b0001000100010001000100010001000100010001000100010001000100010001 b) 
+(store a b #b0001000100010001000100010001000100010001000100010001000100010001))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+[1]    2364454 abort      cvc5 -q --arrays-weak-equiv --check-models bug.smt2
+$cat bug.smt2 
+(declare-const  a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const  b (_ BitVec 64)) 
+(assert (= (store a #x1111111111111111 b) 
+        (store a b #x1111111111111111))) 
+(check-sat)
+$
+```
+
+Issue #3
+Labels: cvc5, Confirmed, Invalid model, Arrays, default
+link: XXXXX
+```
+$cvc5 --check-models --check-unsat-cores -q bug.smt2
+Fatal failure within void cvc5::smt::CheckModels::checkModel(cvc5::theory::TheoryModel*, 
+const cvc5::context::CDList<cvc5::NodeTemplate<true> >&, bool) at 
+/localYYYYY
+Internal error detected SolverEngine::checkModel(): ERRORS SATISFYING ASSERTIONS WITH MODEL:
+assertion:     (let ((_let_1 (select a b))) (= (store a _let_1 _let_1) (store (store a b b) (bvmul 
+#b0001000100010001000100010001000100010001000100010001000100010001 b) (bvneg b))))
+simplifies to: false
+expected `true'.
+Run with `--check-models -v' for additional diagnostics.
+[1]    3607145 abort      cvc5 --check-models --check-unsat-cores -q bug.smt2
+$cat bug.smt2 
+(declare-const a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const b (_ BitVec 64)) 
+(assert (= (store a (select a b) (select a b)) 
+        (store (store a b b) (bvmul #x1111111111111111 b) (bvneg b)))) 
+(check-sat)
+$
+```
+
+Issue #2
+Labels: Z3, Fixed, Soundness, Arrays, 1
+link: XXXXX
+```
+$z3release bug.smt2                                            
+unsat
+$z3release smt.bv.eq_axioms=false bug.smt2  
+sat
+$cat bug.smt2 
+(declare-const a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const b (_ BitVec 64)) 
+(assert (= (store (store a b b) (select a b) (select a b)) 
+           (store (store a b #x1111111111111111) #x1111111111111111
+           (bvudiv b #x1111111111111111)))) 
+(check-sat)
+```
+
+Issue #1
+Labels: Z3, Fixed, Invalid model, Arrays, 1
+link: XXXXX
+```
+$z3release model_validate=true smt.array.extensional=false bug.smt2
+sat
+(error "line 4 column 10: an invalid model was generated")
+$cat bug.smt2 
+(declare-const a (Array (_ BitVec 64) (_ BitVec 64))) 
+(declare-const b (_ BitVec 64)) 
+(assert (distinct a (store a #x0000000000000000 #x0000000000000000))) 
+(check-sat)
+$
+```
+

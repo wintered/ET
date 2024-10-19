@@ -146,7 +146,7 @@ files are described below:
 │   ├── RealInts.g4
 │   ├── Reals.g4
 │   └── Strings.g4
-└── solvers.cfg         - solver configurations considered by oracle 
+└── solvers.cfg             - solver configurations considered by oracle 
 ```
 
 ## Citing ET

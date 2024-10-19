@@ -1,0 +1,12 @@
+#! /usr/bin/python3.10
+import sys
+import subprocess as sp
+if len(sys.argv) != 3: 
+    print("Usage tests_solvers <cfg-file> <smt2-file>")
+    exit(1)
+
+lines = open(sys.argv[1]).read().split("\n")
+s=""
+for l in lines[:-1]:
+    print(l,flush=True)
+    print(sp.getoutput(l + " "+ sys.argv[2]))

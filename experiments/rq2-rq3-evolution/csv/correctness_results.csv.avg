@@ -1,0 +1,1466 @@
+solver,family,theory,type,num_triggers
+z3-4.5.0,Z3,Arrays,unsoundness,0.0
+z3-4.5.0,Z3,Arrays,invalid model,0.0
+z3-4.5.0,Z3,Arrays,crash,0.0
+z3-4.5.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.5.0,Z3,Bitvectors,invalid model,0.0
+z3-4.5.0,Z3,Bitvectors,crash,0.0
+z3-4.5.0,Z3,Core,unsoundness,0.0
+z3-4.5.0,Z3,Core,invalid model,0.0
+z3-4.5.0,Z3,Core,crash,0.0
+z3-4.5.0,Z3,FP,unsoundness,228.0
+z3-4.5.0,Z3,FP,invalid model,282.0
+z3-4.5.0,Z3,FP,crash,0.0
+z3-4.5.0,Z3,Ints,unsoundness,0.0
+z3-4.5.0,Z3,Ints,invalid model,124950.0
+z3-4.5.0,Z3,Ints,crash,0.0
+z3-4.5.0,Z3,RealInts,unsoundness,0.0
+z3-4.5.0,Z3,RealInts,invalid model,49289.0
+z3-4.5.0,Z3,RealInts,crash,0.0
+z3-4.5.0,Z3,Reals,unsoundness,0.0
+z3-4.5.0,Z3,Reals,invalid model,51732.0
+z3-4.5.0,Z3,Reals,crash,0.0
+z3-4.5.0,Z3,Strings,unsoundness,6391.0
+z3-4.5.0,Z3,Strings,invalid model,70520.0
+z3-4.5.0,Z3,Strings,crash,0.0
+z3-4.6.0,Z3,Arrays,unsoundness,0.0
+z3-4.6.0,Z3,Arrays,invalid model,0.0
+z3-4.6.0,Z3,Arrays,crash,0.0
+z3-4.6.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.6.0,Z3,Bitvectors,invalid model,0.0
+z3-4.6.0,Z3,Bitvectors,crash,0.0
+z3-4.6.0,Z3,Core,unsoundness,0.0
+z3-4.6.0,Z3,Core,invalid model,0.0
+z3-4.6.0,Z3,Core,crash,0.0
+z3-4.6.0,Z3,FP,unsoundness,0.0
+z3-4.6.0,Z3,FP,invalid model,0.0
+z3-4.6.0,Z3,FP,crash,0.0
+z3-4.6.0,Z3,Ints,unsoundness,304.0
+z3-4.6.0,Z3,Ints,invalid model,154758.0
+z3-4.6.0,Z3,Ints,crash,0.0
+z3-4.6.0,Z3,RealInts,unsoundness,0.0
+z3-4.6.0,Z3,RealInts,invalid model,82705.0
+z3-4.6.0,Z3,RealInts,crash,0.0
+z3-4.6.0,Z3,Reals,unsoundness,0.0
+z3-4.6.0,Z3,Reals,invalid model,108604.0
+z3-4.6.0,Z3,Reals,crash,0.0
+z3-4.6.0,Z3,Strings,unsoundness,6830.0
+z3-4.6.0,Z3,Strings,invalid model,14706.5
+z3-4.6.0,Z3,Strings,crash,0.0
+z3-4.7.1,Z3,Arrays,unsoundness,0.0
+z3-4.7.1,Z3,Arrays,invalid model,0.0
+z3-4.7.1,Z3,Arrays,crash,0.0
+z3-4.7.1,Z3,Bitvectors,unsoundness,0.0
+z3-4.7.1,Z3,Bitvectors,invalid model,0.0
+z3-4.7.1,Z3,Bitvectors,crash,0.0
+z3-4.7.1,Z3,Core,unsoundness,0.0
+z3-4.7.1,Z3,Core,invalid model,0.0
+z3-4.7.1,Z3,Core,crash,0.0
+z3-4.7.1,Z3,FP,unsoundness,0.0
+z3-4.7.1,Z3,FP,invalid model,0.0
+z3-4.7.1,Z3,FP,crash,0.0
+z3-4.7.1,Z3,Ints,unsoundness,836.0
+z3-4.7.1,Z3,Ints,invalid model,147682.0
+z3-4.7.1,Z3,Ints,crash,0.0
+z3-4.7.1,Z3,RealInts,unsoundness,0.0
+z3-4.7.1,Z3,RealInts,invalid model,82535.0
+z3-4.7.1,Z3,RealInts,crash,0.0
+z3-4.7.1,Z3,Reals,unsoundness,0.0
+z3-4.7.1,Z3,Reals,invalid model,108604.0
+z3-4.7.1,Z3,Reals,crash,0.0
+z3-4.7.1,Z3,Strings,unsoundness,3720.0
+z3-4.7.1,Z3,Strings,invalid model,6351.0
+z3-4.7.1,Z3,Strings,crash,0.0
+z3-4.8.1,Z3,Arrays,unsoundness,0.0
+z3-4.8.1,Z3,Arrays,invalid model,0.0
+z3-4.8.1,Z3,Arrays,crash,0.0
+z3-4.8.1,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.1,Z3,Bitvectors,invalid model,0.0
+z3-4.8.1,Z3,Bitvectors,crash,0.0
+z3-4.8.1,Z3,Core,unsoundness,0.0
+z3-4.8.1,Z3,Core,invalid model,0.0
+z3-4.8.1,Z3,Core,crash,1742.0
+z3-4.8.1,Z3,FP,unsoundness,0.0
+z3-4.8.1,Z3,FP,invalid model,0.0
+z3-4.8.1,Z3,FP,crash,0.0
+z3-4.8.1,Z3,Ints,unsoundness,0.0
+z3-4.8.1,Z3,Ints,invalid model,66514.0
+z3-4.8.1,Z3,Ints,crash,800.0
+z3-4.8.1,Z3,RealInts,unsoundness,0.0
+z3-4.8.1,Z3,RealInts,invalid model,51482.0
+z3-4.8.1,Z3,RealInts,crash,520.0
+z3-4.8.1,Z3,Reals,unsoundness,0.0
+z3-4.8.1,Z3,Reals,invalid model,65066.0
+z3-4.8.1,Z3,Reals,crash,920.0
+z3-4.8.1,Z3,Strings,unsoundness,3750.0
+z3-4.8.1,Z3,Strings,invalid model,6111.0
+z3-4.8.1,Z3,Strings,crash,0.0
+z3-4.8.3,Z3,Arrays,unsoundness,0.0
+z3-4.8.3,Z3,Arrays,invalid model,0.0
+z3-4.8.3,Z3,Arrays,crash,0.0
+z3-4.8.3,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.3,Z3,Bitvectors,invalid model,0.0
+z3-4.8.3,Z3,Bitvectors,crash,0.0
+z3-4.8.3,Z3,Core,unsoundness,0.0
+z3-4.8.3,Z3,Core,invalid model,0.0
+z3-4.8.3,Z3,Core,crash,1742.0
+z3-4.8.3,Z3,FP,unsoundness,0.0
+z3-4.8.3,Z3,FP,invalid model,0.0
+z3-4.8.3,Z3,FP,crash,0.0
+z3-4.8.3,Z3,Ints,unsoundness,0.0
+z3-4.8.3,Z3,Ints,invalid model,79954.0
+z3-4.8.3,Z3,Ints,crash,800.0
+z3-4.8.3,Z3,RealInts,unsoundness,0.0
+z3-4.8.3,Z3,RealInts,invalid model,51492.0
+z3-4.8.3,Z3,RealInts,crash,520.0
+z3-4.8.3,Z3,Reals,unsoundness,0.0
+z3-4.8.3,Z3,Reals,invalid model,65066.0
+z3-4.8.3,Z3,Reals,crash,920.0
+z3-4.8.3,Z3,Strings,unsoundness,554.0
+z3-4.8.3,Z3,Strings,invalid model,462.0
+z3-4.8.3,Z3,Strings,crash,0.0
+z3-4.8.4,Z3,Arrays,unsoundness,0.0
+z3-4.8.4,Z3,Arrays,invalid model,0.0
+z3-4.8.4,Z3,Arrays,crash,0.0
+z3-4.8.4,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.4,Z3,Bitvectors,invalid model,0.0
+z3-4.8.4,Z3,Bitvectors,crash,0.0
+z3-4.8.4,Z3,Core,unsoundness,0.0
+z3-4.8.4,Z3,Core,invalid model,0.0
+z3-4.8.4,Z3,Core,crash,1742.0
+z3-4.8.4,Z3,FP,unsoundness,0.0
+z3-4.8.4,Z3,FP,invalid model,0.0
+z3-4.8.4,Z3,FP,crash,0.0
+z3-4.8.4,Z3,Ints,unsoundness,0.0
+z3-4.8.4,Z3,Ints,invalid model,79954.0
+z3-4.8.4,Z3,Ints,crash,800.0
+z3-4.8.4,Z3,RealInts,unsoundness,0.0
+z3-4.8.4,Z3,RealInts,invalid model,51492.0
+z3-4.8.4,Z3,RealInts,crash,520.0
+z3-4.8.4,Z3,Reals,unsoundness,0.0
+z3-4.8.4,Z3,Reals,invalid model,65066.0
+z3-4.8.4,Z3,Reals,crash,920.0
+z3-4.8.4,Z3,Strings,unsoundness,516.0
+z3-4.8.4,Z3,Strings,invalid model,88.0
+z3-4.8.4,Z3,Strings,crash,0.0
+z3-4.8.5,Z3,Arrays,unsoundness,0.0
+z3-4.8.5,Z3,Arrays,invalid model,0.0
+z3-4.8.5,Z3,Arrays,crash,0.0
+z3-4.8.5,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.5,Z3,Bitvectors,invalid model,0.0
+z3-4.8.5,Z3,Bitvectors,crash,0.0
+z3-4.8.5,Z3,Core,unsoundness,0.0
+z3-4.8.5,Z3,Core,invalid model,0.0
+z3-4.8.5,Z3,Core,crash,1742.0
+z3-4.8.5,Z3,FP,unsoundness,0.0
+z3-4.8.5,Z3,FP,invalid model,0.0
+z3-4.8.5,Z3,FP,crash,0.0
+z3-4.8.5,Z3,Ints,unsoundness,0.0
+z3-4.8.5,Z3,Ints,invalid model,174846.0
+z3-4.8.5,Z3,Ints,crash,0.0
+z3-4.8.5,Z3,RealInts,unsoundness,0.0
+z3-4.8.5,Z3,RealInts,invalid model,82602.0
+z3-4.8.5,Z3,RealInts,crash,0.0
+z3-4.8.5,Z3,Reals,unsoundness,0.0
+z3-4.8.5,Z3,Reals,invalid model,95032.0
+z3-4.8.5,Z3,Reals,crash,0.0
+z3-4.8.5,Z3,Strings,unsoundness,516.0
+z3-4.8.5,Z3,Strings,invalid model,12.0
+z3-4.8.5,Z3,Strings,crash,0.0
+z3-4.8.6,Z3,Arrays,unsoundness,0.0
+z3-4.8.6,Z3,Arrays,invalid model,0.0
+z3-4.8.6,Z3,Arrays,crash,0.0
+z3-4.8.6,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.6,Z3,Bitvectors,invalid model,0.0
+z3-4.8.6,Z3,Bitvectors,crash,0.0
+z3-4.8.6,Z3,Core,unsoundness,0.0
+z3-4.8.6,Z3,Core,invalid model,0.0
+z3-4.8.6,Z3,Core,crash,1759.0
+z3-4.8.6,Z3,FP,unsoundness,0.0
+z3-4.8.6,Z3,FP,invalid model,0.0
+z3-4.8.6,Z3,FP,crash,0.0
+z3-4.8.6,Z3,Ints,unsoundness,0.0
+z3-4.8.6,Z3,Ints,invalid model,174848.0
+z3-4.8.6,Z3,Ints,crash,0.0
+z3-4.8.6,Z3,RealInts,unsoundness,0.0
+z3-4.8.6,Z3,RealInts,invalid model,79540.0
+z3-4.8.6,Z3,RealInts,crash,0.0
+z3-4.8.6,Z3,Reals,unsoundness,0.0
+z3-4.8.6,Z3,Reals,invalid model,76914.0
+z3-4.8.6,Z3,Reals,crash,0.0
+z3-4.8.6,Z3,Strings,unsoundness,785.0
+z3-4.8.6,Z3,Strings,invalid model,75337.5
+z3-4.8.6,Z3,Strings,crash,0.0
+z3-4.8.7,Z3,Arrays,unsoundness,0.0
+z3-4.8.7,Z3,Arrays,invalid model,0.0
+z3-4.8.7,Z3,Arrays,crash,0.0
+z3-4.8.7,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.7,Z3,Bitvectors,invalid model,0.0
+z3-4.8.7,Z3,Bitvectors,crash,0.0
+z3-4.8.7,Z3,Core,unsoundness,0.0
+z3-4.8.7,Z3,Core,invalid model,0.0
+z3-4.8.7,Z3,Core,crash,1759.0
+z3-4.8.7,Z3,FP,unsoundness,0.0
+z3-4.8.7,Z3,FP,invalid model,0.0
+z3-4.8.7,Z3,FP,crash,0.0
+z3-4.8.7,Z3,Ints,unsoundness,0.0
+z3-4.8.7,Z3,Ints,invalid model,79410.0
+z3-4.8.7,Z3,Ints,crash,0.0
+z3-4.8.7,Z3,RealInts,unsoundness,0.0
+z3-4.8.7,Z3,RealInts,invalid model,15854.0
+z3-4.8.7,Z3,RealInts,crash,0.0
+z3-4.8.7,Z3,Reals,unsoundness,0.0
+z3-4.8.7,Z3,Reals,invalid model,17310.0
+z3-4.8.7,Z3,Reals,crash,0.0
+z3-4.8.7,Z3,Strings,unsoundness,785.0
+z3-4.8.7,Z3,Strings,invalid model,75280.0
+z3-4.8.7,Z3,Strings,crash,0.0
+z3-4.8.8,Z3,Arrays,unsoundness,0.0
+z3-4.8.8,Z3,Arrays,invalid model,0.0
+z3-4.8.8,Z3,Arrays,crash,0.0
+z3-4.8.8,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.8,Z3,Bitvectors,invalid model,0.0
+z3-4.8.8,Z3,Bitvectors,crash,0.0
+z3-4.8.8,Z3,Core,unsoundness,0.0
+z3-4.8.8,Z3,Core,invalid model,0.0
+z3-4.8.8,Z3,Core,crash,0.0
+z3-4.8.8,Z3,FP,unsoundness,0.0
+z3-4.8.8,Z3,FP,invalid model,0.0
+z3-4.8.8,Z3,FP,crash,0.0
+z3-4.8.8,Z3,Ints,unsoundness,0.0
+z3-4.8.8,Z3,Ints,invalid model,0.0
+z3-4.8.8,Z3,Ints,crash,0.0
+z3-4.8.8,Z3,RealInts,unsoundness,0.0
+z3-4.8.8,Z3,RealInts,invalid model,0.0
+z3-4.8.8,Z3,RealInts,crash,0.0
+z3-4.8.8,Z3,Reals,unsoundness,0.0
+z3-4.8.8,Z3,Reals,invalid model,0.0
+z3-4.8.8,Z3,Reals,crash,0.0
+z3-4.8.8,Z3,Strings,unsoundness,0.0
+z3-4.8.8,Z3,Strings,invalid model,0.0
+z3-4.8.8,Z3,Strings,crash,0.0
+z3-4.8.9,Z3,Arrays,unsoundness,0.0
+z3-4.8.9,Z3,Arrays,invalid model,0.0
+z3-4.8.9,Z3,Arrays,crash,0.0
+z3-4.8.9,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.9,Z3,Bitvectors,invalid model,0.0
+z3-4.8.9,Z3,Bitvectors,crash,0.0
+z3-4.8.9,Z3,Core,unsoundness,0.0
+z3-4.8.9,Z3,Core,invalid model,0.0
+z3-4.8.9,Z3,Core,crash,0.0
+z3-4.8.9,Z3,FP,unsoundness,0.0
+z3-4.8.9,Z3,FP,invalid model,0.0
+z3-4.8.9,Z3,FP,crash,0.0
+z3-4.8.9,Z3,Ints,unsoundness,0.0
+z3-4.8.9,Z3,Ints,invalid model,0.0
+z3-4.8.9,Z3,Ints,crash,0.0
+z3-4.8.9,Z3,RealInts,unsoundness,0.0
+z3-4.8.9,Z3,RealInts,invalid model,0.0
+z3-4.8.9,Z3,RealInts,crash,0.0
+z3-4.8.9,Z3,Reals,unsoundness,0.0
+z3-4.8.9,Z3,Reals,invalid model,0.0
+z3-4.8.9,Z3,Reals,crash,0.0
+z3-4.8.9,Z3,Strings,unsoundness,0.0
+z3-4.8.9,Z3,Strings,invalid model,0.0
+z3-4.8.9,Z3,Strings,crash,0.0
+z3-4.8.10,Z3,Arrays,unsoundness,0.0
+z3-4.8.10,Z3,Arrays,invalid model,0.0
+z3-4.8.10,Z3,Arrays,crash,0.0
+z3-4.8.10,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.10,Z3,Bitvectors,invalid model,0.0
+z3-4.8.10,Z3,Bitvectors,crash,0.0
+z3-4.8.10,Z3,Core,unsoundness,0.0
+z3-4.8.10,Z3,Core,invalid model,0.0
+z3-4.8.10,Z3,Core,crash,0.0
+z3-4.8.10,Z3,FP,unsoundness,0.0
+z3-4.8.10,Z3,FP,invalid model,0.0
+z3-4.8.10,Z3,FP,crash,0.0
+z3-4.8.10,Z3,Ints,unsoundness,0.0
+z3-4.8.10,Z3,Ints,invalid model,0.0
+z3-4.8.10,Z3,Ints,crash,0.0
+z3-4.8.10,Z3,RealInts,unsoundness,0.0
+z3-4.8.10,Z3,RealInts,invalid model,0.0
+z3-4.8.10,Z3,RealInts,crash,0.0
+z3-4.8.10,Z3,Reals,unsoundness,0.0
+z3-4.8.10,Z3,Reals,invalid model,0.0
+z3-4.8.10,Z3,Reals,crash,0.0
+z3-4.8.10,Z3,Strings,unsoundness,0.0
+z3-4.8.10,Z3,Strings,invalid model,20.0
+z3-4.8.10,Z3,Strings,crash,0.0
+z3-4.8.11,Z3,Arrays,unsoundness,0.0
+z3-4.8.11,Z3,Arrays,invalid model,0.0
+z3-4.8.11,Z3,Arrays,crash,0.0
+z3-4.8.11,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.11,Z3,Bitvectors,invalid model,0.0
+z3-4.8.11,Z3,Bitvectors,crash,0.0
+z3-4.8.11,Z3,Core,unsoundness,0.0
+z3-4.8.11,Z3,Core,invalid model,0.0
+z3-4.8.11,Z3,Core,crash,0.0
+z3-4.8.11,Z3,FP,unsoundness,0.0
+z3-4.8.11,Z3,FP,invalid model,0.0
+z3-4.8.11,Z3,FP,crash,0.0
+z3-4.8.11,Z3,Ints,unsoundness,0.0
+z3-4.8.11,Z3,Ints,invalid model,0.0
+z3-4.8.11,Z3,Ints,crash,0.0
+z3-4.8.11,Z3,RealInts,unsoundness,0.0
+z3-4.8.11,Z3,RealInts,invalid model,0.0
+z3-4.8.11,Z3,RealInts,crash,0.0
+z3-4.8.11,Z3,Reals,unsoundness,0.0
+z3-4.8.11,Z3,Reals,invalid model,0.0
+z3-4.8.11,Z3,Reals,crash,0.0
+z3-4.8.11,Z3,Strings,unsoundness,0.0
+z3-4.8.11,Z3,Strings,invalid model,0.0
+z3-4.8.11,Z3,Strings,crash,0.0
+z3-4.8.12,Z3,Arrays,unsoundness,0.0
+z3-4.8.12,Z3,Arrays,invalid model,0.0
+z3-4.8.12,Z3,Arrays,crash,0.0
+z3-4.8.12,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.12,Z3,Bitvectors,invalid model,0.0
+z3-4.8.12,Z3,Bitvectors,crash,0.0
+z3-4.8.12,Z3,Core,unsoundness,0.0
+z3-4.8.12,Z3,Core,invalid model,0.0
+z3-4.8.12,Z3,Core,crash,0.0
+z3-4.8.12,Z3,FP,unsoundness,0.0
+z3-4.8.12,Z3,FP,invalid model,0.0
+z3-4.8.12,Z3,FP,crash,0.0
+z3-4.8.12,Z3,Ints,unsoundness,0.0
+z3-4.8.12,Z3,Ints,invalid model,0.0
+z3-4.8.12,Z3,Ints,crash,0.0
+z3-4.8.12,Z3,RealInts,unsoundness,0.0
+z3-4.8.12,Z3,RealInts,invalid model,0.0
+z3-4.8.12,Z3,RealInts,crash,0.0
+z3-4.8.12,Z3,Reals,unsoundness,0.0
+z3-4.8.12,Z3,Reals,invalid model,0.0
+z3-4.8.12,Z3,Reals,crash,0.0
+z3-4.8.12,Z3,Strings,unsoundness,0.0
+z3-4.8.12,Z3,Strings,invalid model,0.0
+z3-4.8.12,Z3,Strings,crash,0.0
+z3-4.8.13,Z3,Arrays,unsoundness,0.0
+z3-4.8.13,Z3,Arrays,invalid model,0.0
+z3-4.8.13,Z3,Arrays,crash,0.0
+z3-4.8.13,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.13,Z3,Bitvectors,invalid model,0.0
+z3-4.8.13,Z3,Bitvectors,crash,0.0
+z3-4.8.13,Z3,Core,unsoundness,0.0
+z3-4.8.13,Z3,Core,invalid model,0.0
+z3-4.8.13,Z3,Core,crash,0.0
+z3-4.8.13,Z3,FP,unsoundness,0.0
+z3-4.8.13,Z3,FP,invalid model,0.0
+z3-4.8.13,Z3,FP,crash,0.0
+z3-4.8.13,Z3,Ints,unsoundness,0.0
+z3-4.8.13,Z3,Ints,invalid model,0.0
+z3-4.8.13,Z3,Ints,crash,0.0
+z3-4.8.13,Z3,RealInts,unsoundness,0.0
+z3-4.8.13,Z3,RealInts,invalid model,0.0
+z3-4.8.13,Z3,RealInts,crash,0.0
+z3-4.8.13,Z3,Reals,unsoundness,0.0
+z3-4.8.13,Z3,Reals,invalid model,0.0
+z3-4.8.13,Z3,Reals,crash,0.0
+z3-4.8.13,Z3,Strings,unsoundness,0.0
+z3-4.8.13,Z3,Strings,invalid model,0.0
+z3-4.8.13,Z3,Strings,crash,0.0
+z3-4.8.14,Z3,Arrays,unsoundness,0.0
+z3-4.8.14,Z3,Arrays,invalid model,0.0
+z3-4.8.14,Z3,Arrays,crash,0.0
+z3-4.8.14,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.14,Z3,Bitvectors,invalid model,0.0
+z3-4.8.14,Z3,Bitvectors,crash,0.0
+z3-4.8.14,Z3,Core,unsoundness,0.0
+z3-4.8.14,Z3,Core,invalid model,0.0
+z3-4.8.14,Z3,Core,crash,0.0
+z3-4.8.14,Z3,FP,unsoundness,0.0
+z3-4.8.14,Z3,FP,invalid model,0.0
+z3-4.8.14,Z3,FP,crash,0.0
+z3-4.8.14,Z3,Ints,unsoundness,0.0
+z3-4.8.14,Z3,Ints,invalid model,0.0
+z3-4.8.14,Z3,Ints,crash,0.0
+z3-4.8.14,Z3,RealInts,unsoundness,0.0
+z3-4.8.14,Z3,RealInts,invalid model,0.0
+z3-4.8.14,Z3,RealInts,crash,0.0
+z3-4.8.14,Z3,Reals,unsoundness,0.0
+z3-4.8.14,Z3,Reals,invalid model,0.0
+z3-4.8.14,Z3,Reals,crash,0.0
+z3-4.8.14,Z3,Strings,unsoundness,0.0
+z3-4.8.14,Z3,Strings,invalid model,0.0
+z3-4.8.14,Z3,Strings,crash,0.0
+z3-4.8.15,Z3,Arrays,unsoundness,0.0
+z3-4.8.15,Z3,Arrays,invalid model,0.0
+z3-4.8.15,Z3,Arrays,crash,0.0
+z3-4.8.15,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.15,Z3,Bitvectors,invalid model,0.0
+z3-4.8.15,Z3,Bitvectors,crash,0.0
+z3-4.8.15,Z3,Core,unsoundness,0.0
+z3-4.8.15,Z3,Core,invalid model,0.0
+z3-4.8.15,Z3,Core,crash,0.0
+z3-4.8.15,Z3,FP,unsoundness,0.0
+z3-4.8.15,Z3,FP,invalid model,0.0
+z3-4.8.15,Z3,FP,crash,0.0
+z3-4.8.15,Z3,Ints,unsoundness,0.0
+z3-4.8.15,Z3,Ints,invalid model,0.0
+z3-4.8.15,Z3,Ints,crash,0.0
+z3-4.8.15,Z3,RealInts,unsoundness,0.0
+z3-4.8.15,Z3,RealInts,invalid model,0.0
+z3-4.8.15,Z3,RealInts,crash,0.0
+z3-4.8.15,Z3,Reals,unsoundness,0.0
+z3-4.8.15,Z3,Reals,invalid model,0.0
+z3-4.8.15,Z3,Reals,crash,0.0
+z3-4.8.15,Z3,Strings,unsoundness,0.0
+z3-4.8.15,Z3,Strings,invalid model,0.0
+z3-4.8.15,Z3,Strings,crash,0.0
+z3-4.8.16,Z3,Arrays,unsoundness,0.0
+z3-4.8.16,Z3,Arrays,invalid model,0.0
+z3-4.8.16,Z3,Arrays,crash,0.0
+z3-4.8.16,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.16,Z3,Bitvectors,invalid model,0.0
+z3-4.8.16,Z3,Bitvectors,crash,0.0
+z3-4.8.16,Z3,Core,unsoundness,0.0
+z3-4.8.16,Z3,Core,invalid model,0.0
+z3-4.8.16,Z3,Core,crash,0.0
+z3-4.8.16,Z3,FP,unsoundness,0.0
+z3-4.8.16,Z3,FP,invalid model,0.0
+z3-4.8.16,Z3,FP,crash,0.0
+z3-4.8.16,Z3,Ints,unsoundness,0.0
+z3-4.8.16,Z3,Ints,invalid model,0.0
+z3-4.8.16,Z3,Ints,crash,0.0
+z3-4.8.16,Z3,RealInts,unsoundness,0.0
+z3-4.8.16,Z3,RealInts,invalid model,0.0
+z3-4.8.16,Z3,RealInts,crash,0.0
+z3-4.8.16,Z3,Reals,unsoundness,0.0
+z3-4.8.16,Z3,Reals,invalid model,0.0
+z3-4.8.16,Z3,Reals,crash,0.0
+z3-4.8.16,Z3,Strings,unsoundness,0.0
+z3-4.8.16,Z3,Strings,invalid model,0.0
+z3-4.8.16,Z3,Strings,crash,0.0
+z3-4.8.17,Z3,Arrays,unsoundness,0.0
+z3-4.8.17,Z3,Arrays,invalid model,0.0
+z3-4.8.17,Z3,Arrays,crash,0.0
+z3-4.8.17,Z3,Bitvectors,unsoundness,0.0
+z3-4.8.17,Z3,Bitvectors,invalid model,0.0
+z3-4.8.17,Z3,Bitvectors,crash,0.0
+z3-4.8.17,Z3,Core,unsoundness,0.0
+z3-4.8.17,Z3,Core,invalid model,0.0
+z3-4.8.17,Z3,Core,crash,0.0
+z3-4.8.17,Z3,FP,unsoundness,0.0
+z3-4.8.17,Z3,FP,invalid model,0.0
+z3-4.8.17,Z3,FP,crash,0.0
+z3-4.8.17,Z3,Ints,unsoundness,0.0
+z3-4.8.17,Z3,Ints,invalid model,0.0
+z3-4.8.17,Z3,Ints,crash,0.0
+z3-4.8.17,Z3,RealInts,unsoundness,0.0
+z3-4.8.17,Z3,RealInts,invalid model,0.0
+z3-4.8.17,Z3,RealInts,crash,0.0
+z3-4.8.17,Z3,Reals,unsoundness,0.0
+z3-4.8.17,Z3,Reals,invalid model,0.0
+z3-4.8.17,Z3,Reals,crash,0.0
+z3-4.8.17,Z3,Strings,unsoundness,0.0
+z3-4.8.17,Z3,Strings,invalid model,0.0
+z3-4.8.17,Z3,Strings,crash,0.0
+z3-4.9.0,Z3,Arrays,unsoundness,0.0
+z3-4.9.0,Z3,Arrays,invalid model,0.0
+z3-4.9.0,Z3,Arrays,crash,0.0
+z3-4.9.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.9.0,Z3,Bitvectors,invalid model,0.0
+z3-4.9.0,Z3,Bitvectors,crash,0.0
+z3-4.9.0,Z3,Core,unsoundness,0.0
+z3-4.9.0,Z3,Core,invalid model,0.0
+z3-4.9.0,Z3,Core,crash,0.0
+z3-4.9.0,Z3,FP,unsoundness,0.0
+z3-4.9.0,Z3,FP,invalid model,322.0
+z3-4.9.0,Z3,FP,crash,0.0
+z3-4.9.0,Z3,Ints,unsoundness,0.0
+z3-4.9.0,Z3,Ints,invalid model,0.0
+z3-4.9.0,Z3,Ints,crash,0.0
+z3-4.9.0,Z3,RealInts,unsoundness,0.0
+z3-4.9.0,Z3,RealInts,invalid model,0.0
+z3-4.9.0,Z3,RealInts,crash,0.0
+z3-4.9.0,Z3,Reals,unsoundness,0.0
+z3-4.9.0,Z3,Reals,invalid model,0.0
+z3-4.9.0,Z3,Reals,crash,0.0
+z3-4.9.0,Z3,Strings,unsoundness,0.0
+z3-4.9.0,Z3,Strings,invalid model,0.0
+z3-4.9.0,Z3,Strings,crash,0.0
+z3-4.9.1,Z3,Arrays,unsoundness,0.0
+z3-4.9.1,Z3,Arrays,invalid model,0.0
+z3-4.9.1,Z3,Arrays,crash,0.0
+z3-4.9.1,Z3,Bitvectors,unsoundness,0.0
+z3-4.9.1,Z3,Bitvectors,invalid model,0.0
+z3-4.9.1,Z3,Bitvectors,crash,0.0
+z3-4.9.1,Z3,Core,unsoundness,0.0
+z3-4.9.1,Z3,Core,invalid model,0.0
+z3-4.9.1,Z3,Core,crash,0.0
+z3-4.9.1,Z3,FP,unsoundness,0.0
+z3-4.9.1,Z3,FP,invalid model,321.5
+z3-4.9.1,Z3,FP,crash,0.0
+z3-4.9.1,Z3,Ints,unsoundness,0.0
+z3-4.9.1,Z3,Ints,invalid model,0.0
+z3-4.9.1,Z3,Ints,crash,0.0
+z3-4.9.1,Z3,RealInts,unsoundness,0.0
+z3-4.9.1,Z3,RealInts,invalid model,0.0
+z3-4.9.1,Z3,RealInts,crash,0.0
+z3-4.9.1,Z3,Reals,unsoundness,0.0
+z3-4.9.1,Z3,Reals,invalid model,0.0
+z3-4.9.1,Z3,Reals,crash,0.0
+z3-4.9.1,Z3,Strings,unsoundness,0.0
+z3-4.9.1,Z3,Strings,invalid model,0.0
+z3-4.9.1,Z3,Strings,crash,0.0
+z3-4.10.0,Z3,Arrays,unsoundness,0.0
+z3-4.10.0,Z3,Arrays,invalid model,0.0
+z3-4.10.0,Z3,Arrays,crash,0.0
+z3-4.10.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.10.0,Z3,Bitvectors,invalid model,0.0
+z3-4.10.0,Z3,Bitvectors,crash,0.0
+z3-4.10.0,Z3,Core,unsoundness,0.0
+z3-4.10.0,Z3,Core,invalid model,0.0
+z3-4.10.0,Z3,Core,crash,0.0
+z3-4.10.0,Z3,FP,unsoundness,0.0
+z3-4.10.0,Z3,FP,invalid model,321.0
+z3-4.10.0,Z3,FP,crash,0.0
+z3-4.10.0,Z3,Ints,unsoundness,0.0
+z3-4.10.0,Z3,Ints,invalid model,0.0
+z3-4.10.0,Z3,Ints,crash,0.0
+z3-4.10.0,Z3,RealInts,unsoundness,0.0
+z3-4.10.0,Z3,RealInts,invalid model,0.0
+z3-4.10.0,Z3,RealInts,crash,0.0
+z3-4.10.0,Z3,Reals,unsoundness,0.0
+z3-4.10.0,Z3,Reals,invalid model,0.0
+z3-4.10.0,Z3,Reals,crash,0.0
+z3-4.10.0,Z3,Strings,unsoundness,0.0
+z3-4.10.0,Z3,Strings,invalid model,0.0
+z3-4.10.0,Z3,Strings,crash,0.0
+z3-4.10.1,Z3,Arrays,unsoundness,0.0
+z3-4.10.1,Z3,Arrays,invalid model,0.0
+z3-4.10.1,Z3,Arrays,crash,0.0
+z3-4.10.1,Z3,Bitvectors,unsoundness,0.0
+z3-4.10.1,Z3,Bitvectors,invalid model,0.0
+z3-4.10.1,Z3,Bitvectors,crash,0.0
+z3-4.10.1,Z3,Core,unsoundness,0.0
+z3-4.10.1,Z3,Core,invalid model,0.0
+z3-4.10.1,Z3,Core,crash,0.0
+z3-4.10.1,Z3,FP,unsoundness,0.0
+z3-4.10.1,Z3,FP,invalid model,321.0
+z3-4.10.1,Z3,FP,crash,0.0
+z3-4.10.1,Z3,Ints,unsoundness,0.0
+z3-4.10.1,Z3,Ints,invalid model,0.0
+z3-4.10.1,Z3,Ints,crash,0.0
+z3-4.10.1,Z3,RealInts,unsoundness,0.0
+z3-4.10.1,Z3,RealInts,invalid model,0.0
+z3-4.10.1,Z3,RealInts,crash,0.0
+z3-4.10.1,Z3,Reals,unsoundness,0.0
+z3-4.10.1,Z3,Reals,invalid model,0.0
+z3-4.10.1,Z3,Reals,crash,0.0
+z3-4.10.1,Z3,Strings,unsoundness,0.0
+z3-4.10.1,Z3,Strings,invalid model,0.0
+z3-4.10.1,Z3,Strings,crash,0.0
+z3-4.10.2,Z3,Arrays,unsoundness,0.0
+z3-4.10.2,Z3,Arrays,invalid model,0.0
+z3-4.10.2,Z3,Arrays,crash,0.0
+z3-4.10.2,Z3,Bitvectors,unsoundness,0.0
+z3-4.10.2,Z3,Bitvectors,invalid model,0.0
+z3-4.10.2,Z3,Bitvectors,crash,0.0
+z3-4.10.2,Z3,Core,unsoundness,0.0
+z3-4.10.2,Z3,Core,invalid model,0.0
+z3-4.10.2,Z3,Core,crash,0.0
+z3-4.10.2,Z3,FP,unsoundness,0.0
+z3-4.10.2,Z3,FP,invalid model,321.0
+z3-4.10.2,Z3,FP,crash,0.0
+z3-4.10.2,Z3,Ints,unsoundness,0.0
+z3-4.10.2,Z3,Ints,invalid model,0.0
+z3-4.10.2,Z3,Ints,crash,0.0
+z3-4.10.2,Z3,RealInts,unsoundness,0.0
+z3-4.10.2,Z3,RealInts,invalid model,0.0
+z3-4.10.2,Z3,RealInts,crash,0.0
+z3-4.10.2,Z3,Reals,unsoundness,0.0
+z3-4.10.2,Z3,Reals,invalid model,0.0
+z3-4.10.2,Z3,Reals,crash,0.0
+z3-4.10.2,Z3,Strings,unsoundness,0.0
+z3-4.10.2,Z3,Strings,invalid model,0.0
+z3-4.10.2,Z3,Strings,crash,0.0
+z3-4.11.0,Z3,Arrays,unsoundness,0.0
+z3-4.11.0,Z3,Arrays,invalid model,0.0
+z3-4.11.0,Z3,Arrays,crash,0.0
+z3-4.11.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.11.0,Z3,Bitvectors,invalid model,0.0
+z3-4.11.0,Z3,Bitvectors,crash,0.0
+z3-4.11.0,Z3,Core,unsoundness,0.0
+z3-4.11.0,Z3,Core,invalid model,0.0
+z3-4.11.0,Z3,Core,crash,0.0
+z3-4.11.0,Z3,FP,unsoundness,0.0
+z3-4.11.0,Z3,FP,invalid model,320.5
+z3-4.11.0,Z3,FP,crash,0.0
+z3-4.11.0,Z3,Ints,unsoundness,0.0
+z3-4.11.0,Z3,Ints,invalid model,0.0
+z3-4.11.0,Z3,Ints,crash,0.0
+z3-4.11.0,Z3,RealInts,unsoundness,0.0
+z3-4.11.0,Z3,RealInts,invalid model,0.0
+z3-4.11.0,Z3,RealInts,crash,0.0
+z3-4.11.0,Z3,Reals,unsoundness,0.0
+z3-4.11.0,Z3,Reals,invalid model,0.0
+z3-4.11.0,Z3,Reals,crash,0.0
+z3-4.11.0,Z3,Strings,unsoundness,0.0
+z3-4.11.0,Z3,Strings,invalid model,0.0
+z3-4.11.0,Z3,Strings,crash,0.0
+z3-4.11.2,Z3,Arrays,unsoundness,0.0
+z3-4.11.2,Z3,Arrays,invalid model,0.0
+z3-4.11.2,Z3,Arrays,crash,0.0
+z3-4.11.2,Z3,Bitvectors,unsoundness,0.0
+z3-4.11.2,Z3,Bitvectors,invalid model,0.0
+z3-4.11.2,Z3,Bitvectors,crash,0.0
+z3-4.11.2,Z3,Core,unsoundness,0.0
+z3-4.11.2,Z3,Core,invalid model,0.0
+z3-4.11.2,Z3,Core,crash,0.0
+z3-4.11.2,Z3,FP,unsoundness,0.0
+z3-4.11.2,Z3,FP,invalid model,319.5
+z3-4.11.2,Z3,FP,crash,0.0
+z3-4.11.2,Z3,Ints,unsoundness,0.0
+z3-4.11.2,Z3,Ints,invalid model,0.0
+z3-4.11.2,Z3,Ints,crash,0.0
+z3-4.11.2,Z3,RealInts,unsoundness,0.0
+z3-4.11.2,Z3,RealInts,invalid model,0.0
+z3-4.11.2,Z3,RealInts,crash,0.0
+z3-4.11.2,Z3,Reals,unsoundness,0.0
+z3-4.11.2,Z3,Reals,invalid model,0.0
+z3-4.11.2,Z3,Reals,crash,0.0
+z3-4.11.2,Z3,Strings,unsoundness,0.0
+z3-4.11.2,Z3,Strings,invalid model,0.0
+z3-4.11.2,Z3,Strings,crash,0.0
+z3-4.12.0,Z3,Arrays,unsoundness,0.0
+z3-4.12.0,Z3,Arrays,invalid model,0.0
+z3-4.12.0,Z3,Arrays,crash,0.0
+z3-4.12.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.0,Z3,Bitvectors,invalid model,0.0
+z3-4.12.0,Z3,Bitvectors,crash,0.0
+z3-4.12.0,Z3,Core,unsoundness,0.0
+z3-4.12.0,Z3,Core,invalid model,0.0
+z3-4.12.0,Z3,Core,crash,0.0
+z3-4.12.0,Z3,FP,unsoundness,0.0
+z3-4.12.0,Z3,FP,invalid model,346.0
+z3-4.12.0,Z3,FP,crash,0.0
+z3-4.12.0,Z3,Ints,unsoundness,0.0
+z3-4.12.0,Z3,Ints,invalid model,0.0
+z3-4.12.0,Z3,Ints,crash,0.0
+z3-4.12.0,Z3,RealInts,unsoundness,0.0
+z3-4.12.0,Z3,RealInts,invalid model,0.0
+z3-4.12.0,Z3,RealInts,crash,0.0
+z3-4.12.0,Z3,Reals,unsoundness,0.0
+z3-4.12.0,Z3,Reals,invalid model,0.0
+z3-4.12.0,Z3,Reals,crash,0.0
+z3-4.12.0,Z3,Strings,unsoundness,0.0
+z3-4.12.0,Z3,Strings,invalid model,0.0
+z3-4.12.0,Z3,Strings,crash,0.0
+z3-4.12.1,Z3,Arrays,unsoundness,0.0
+z3-4.12.1,Z3,Arrays,invalid model,0.0
+z3-4.12.1,Z3,Arrays,crash,0.0
+z3-4.12.1,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.1,Z3,Bitvectors,invalid model,0.0
+z3-4.12.1,Z3,Bitvectors,crash,0.0
+z3-4.12.1,Z3,Core,unsoundness,0.0
+z3-4.12.1,Z3,Core,invalid model,0.0
+z3-4.12.1,Z3,Core,crash,0.0
+z3-4.12.1,Z3,FP,unsoundness,0.0
+z3-4.12.1,Z3,FP,invalid model,347.5
+z3-4.12.1,Z3,FP,crash,0.0
+z3-4.12.1,Z3,Ints,unsoundness,0.0
+z3-4.12.1,Z3,Ints,invalid model,0.0
+z3-4.12.1,Z3,Ints,crash,0.0
+z3-4.12.1,Z3,RealInts,unsoundness,0.0
+z3-4.12.1,Z3,RealInts,invalid model,0.0
+z3-4.12.1,Z3,RealInts,crash,0.0
+z3-4.12.1,Z3,Reals,unsoundness,0.0
+z3-4.12.1,Z3,Reals,invalid model,0.0
+z3-4.12.1,Z3,Reals,crash,0.0
+z3-4.12.1,Z3,Strings,unsoundness,0.0
+z3-4.12.1,Z3,Strings,invalid model,0.0
+z3-4.12.1,Z3,Strings,crash,0.0
+z3-4.12.2,Z3,Arrays,unsoundness,0.0
+z3-4.12.2,Z3,Arrays,invalid model,0.0
+z3-4.12.2,Z3,Arrays,crash,0.0
+z3-4.12.2,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.2,Z3,Bitvectors,invalid model,0.0
+z3-4.12.2,Z3,Bitvectors,crash,0.0
+z3-4.12.2,Z3,Core,unsoundness,0.0
+z3-4.12.2,Z3,Core,invalid model,0.0
+z3-4.12.2,Z3,Core,crash,0.0
+z3-4.12.2,Z3,FP,unsoundness,0.0
+z3-4.12.2,Z3,FP,invalid model,370.5
+z3-4.12.2,Z3,FP,crash,0.0
+z3-4.12.2,Z3,Ints,unsoundness,0.0
+z3-4.12.2,Z3,Ints,invalid model,0.0
+z3-4.12.2,Z3,Ints,crash,0.0
+z3-4.12.2,Z3,RealInts,unsoundness,0.0
+z3-4.12.2,Z3,RealInts,invalid model,0.0
+z3-4.12.2,Z3,RealInts,crash,0.0
+z3-4.12.2,Z3,Reals,unsoundness,0.0
+z3-4.12.2,Z3,Reals,invalid model,0.0
+z3-4.12.2,Z3,Reals,crash,0.0
+z3-4.12.2,Z3,Strings,unsoundness,0.0
+z3-4.12.2,Z3,Strings,invalid model,0.0
+z3-4.12.2,Z3,Strings,crash,0.0
+z3-4.12.3,Z3,Arrays,unsoundness,0.0
+z3-4.12.3,Z3,Arrays,invalid model,0.0
+z3-4.12.3,Z3,Arrays,crash,0.0
+z3-4.12.3,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.3,Z3,Bitvectors,invalid model,0.0
+z3-4.12.3,Z3,Bitvectors,crash,0.0
+z3-4.12.3,Z3,Core,unsoundness,0.0
+z3-4.12.3,Z3,Core,invalid model,0.0
+z3-4.12.3,Z3,Core,crash,0.0
+z3-4.12.3,Z3,FP,unsoundness,0.0
+z3-4.12.3,Z3,FP,invalid model,0.0
+z3-4.12.3,Z3,FP,crash,0.0
+z3-4.12.3,Z3,Ints,unsoundness,0.0
+z3-4.12.3,Z3,Ints,invalid model,0.0
+z3-4.12.3,Z3,Ints,crash,0.0
+z3-4.12.3,Z3,RealInts,unsoundness,0.0
+z3-4.12.3,Z3,RealInts,invalid model,0.0
+z3-4.12.3,Z3,RealInts,crash,0.0
+z3-4.12.3,Z3,Reals,unsoundness,0.0
+z3-4.12.3,Z3,Reals,invalid model,0.0
+z3-4.12.3,Z3,Reals,crash,0.0
+z3-4.12.3,Z3,Strings,unsoundness,0.0
+z3-4.12.3,Z3,Strings,invalid model,0.0
+z3-4.12.3,Z3,Strings,crash,0.0
+z3-4.12.4,Z3,Arrays,unsoundness,0.0
+z3-4.12.4,Z3,Arrays,invalid model,0.0
+z3-4.12.4,Z3,Arrays,crash,0.0
+z3-4.12.4,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.4,Z3,Bitvectors,invalid model,0.0
+z3-4.12.4,Z3,Bitvectors,crash,0.0
+z3-4.12.4,Z3,Core,unsoundness,0.0
+z3-4.12.4,Z3,Core,invalid model,0.0
+z3-4.12.4,Z3,Core,crash,0.0
+z3-4.12.4,Z3,FP,unsoundness,0.0
+z3-4.12.4,Z3,FP,invalid model,0.0
+z3-4.12.4,Z3,FP,crash,0.0
+z3-4.12.4,Z3,Ints,unsoundness,0.0
+z3-4.12.4,Z3,Ints,invalid model,0.0
+z3-4.12.4,Z3,Ints,crash,0.0
+z3-4.12.4,Z3,RealInts,unsoundness,0.0
+z3-4.12.4,Z3,RealInts,invalid model,0.0
+z3-4.12.4,Z3,RealInts,crash,0.0
+z3-4.12.4,Z3,Reals,unsoundness,0.0
+z3-4.12.4,Z3,Reals,invalid model,0.0
+z3-4.12.4,Z3,Reals,crash,0.0
+z3-4.12.4,Z3,Strings,unsoundness,0.0
+z3-4.12.4,Z3,Strings,invalid model,0.0
+z3-4.12.4,Z3,Strings,crash,0.0
+z3-4.12.5,Z3,Arrays,unsoundness,0.0
+z3-4.12.5,Z3,Arrays,invalid model,0.0
+z3-4.12.5,Z3,Arrays,crash,0.0
+z3-4.12.5,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.5,Z3,Bitvectors,invalid model,0.0
+z3-4.12.5,Z3,Bitvectors,crash,0.0
+z3-4.12.5,Z3,Core,unsoundness,0.0
+z3-4.12.5,Z3,Core,invalid model,0.0
+z3-4.12.5,Z3,Core,crash,0.0
+z3-4.12.5,Z3,FP,unsoundness,0.0
+z3-4.12.5,Z3,FP,invalid model,0.0
+z3-4.12.5,Z3,FP,crash,0.0
+z3-4.12.5,Z3,Ints,unsoundness,0.0
+z3-4.12.5,Z3,Ints,invalid model,0.0
+z3-4.12.5,Z3,Ints,crash,0.0
+z3-4.12.5,Z3,RealInts,unsoundness,0.0
+z3-4.12.5,Z3,RealInts,invalid model,0.0
+z3-4.12.5,Z3,RealInts,crash,0.0
+z3-4.12.5,Z3,Reals,unsoundness,0.0
+z3-4.12.5,Z3,Reals,invalid model,0.0
+z3-4.12.5,Z3,Reals,crash,0.0
+z3-4.12.5,Z3,Strings,unsoundness,0.0
+z3-4.12.5,Z3,Strings,invalid model,0.0
+z3-4.12.5,Z3,Strings,crash,0.0
+z3-4.12.6,Z3,Arrays,unsoundness,0.0
+z3-4.12.6,Z3,Arrays,invalid model,0.0
+z3-4.12.6,Z3,Arrays,crash,0.0
+z3-4.12.6,Z3,Bitvectors,unsoundness,0.0
+z3-4.12.6,Z3,Bitvectors,invalid model,0.0
+z3-4.12.6,Z3,Bitvectors,crash,0.0
+z3-4.12.6,Z3,Core,unsoundness,0.0
+z3-4.12.6,Z3,Core,invalid model,0.0
+z3-4.12.6,Z3,Core,crash,0.0
+z3-4.12.6,Z3,FP,unsoundness,0.0
+z3-4.12.6,Z3,FP,invalid model,0.0
+z3-4.12.6,Z3,FP,crash,0.0
+z3-4.12.6,Z3,Ints,unsoundness,0.0
+z3-4.12.6,Z3,Ints,invalid model,0.0
+z3-4.12.6,Z3,Ints,crash,0.0
+z3-4.12.6,Z3,RealInts,unsoundness,0.0
+z3-4.12.6,Z3,RealInts,invalid model,0.0
+z3-4.12.6,Z3,RealInts,crash,0.0
+z3-4.12.6,Z3,Reals,unsoundness,0.0
+z3-4.12.6,Z3,Reals,invalid model,0.0
+z3-4.12.6,Z3,Reals,crash,0.0
+z3-4.12.6,Z3,Strings,unsoundness,0.0
+z3-4.12.6,Z3,Strings,invalid model,0.0
+z3-4.12.6,Z3,Strings,crash,0.0
+z3-4.13.0,Z3,Arrays,unsoundness,0.0
+z3-4.13.0,Z3,Arrays,invalid model,0.0
+z3-4.13.0,Z3,Arrays,crash,0.0
+z3-4.13.0,Z3,Bitvectors,unsoundness,0.0
+z3-4.13.0,Z3,Bitvectors,invalid model,0.0
+z3-4.13.0,Z3,Bitvectors,crash,0.0
+z3-4.13.0,Z3,Core,unsoundness,0.0
+z3-4.13.0,Z3,Core,invalid model,0.0
+z3-4.13.0,Z3,Core,crash,0.0
+z3-4.13.0,Z3,FP,unsoundness,0.0
+z3-4.13.0,Z3,FP,invalid model,0.0
+z3-4.13.0,Z3,FP,crash,0.0
+z3-4.13.0,Z3,Ints,unsoundness,0.0
+z3-4.13.0,Z3,Ints,invalid model,0.0
+z3-4.13.0,Z3,Ints,crash,0.0
+z3-4.13.0,Z3,RealInts,unsoundness,0.0
+z3-4.13.0,Z3,RealInts,invalid model,0.0
+z3-4.13.0,Z3,RealInts,crash,0.0
+z3-4.13.0,Z3,Reals,unsoundness,0.0
+z3-4.13.0,Z3,Reals,invalid model,0.0
+z3-4.13.0,Z3,Reals,crash,0.0
+z3-4.13.0,Z3,Strings,unsoundness,0.0
+z3-4.13.0,Z3,Strings,invalid model,0.0
+z3-4.13.0,Z3,Strings,crash,0.0
+cvc4-1.5,CVC4/5,Arrays,unsoundness,0.0
+cvc4-1.5,CVC4/5,Arrays,invalid model,0.0
+cvc4-1.5,CVC4/5,Arrays,crash,3435.0
+cvc4-1.5,CVC4/5,Bitvectors,unsoundness,32445.5
+cvc4-1.5,CVC4/5,Bitvectors,invalid model,0.0
+cvc4-1.5,CVC4/5,Bitvectors,crash,4.0
+cvc4-1.5,CVC4/5,Core,unsoundness,0.0
+cvc4-1.5,CVC4/5,Core,invalid model,0.0
+cvc4-1.5,CVC4/5,Core,crash,0.0
+cvc4-1.5,CVC4/5,FP,unsoundness,0.0
+cvc4-1.5,CVC4/5,FP,invalid model,0.0
+cvc4-1.5,CVC4/5,FP,crash,999988.0
+cvc4-1.5,CVC4/5,Ints,unsoundness,0.0
+cvc4-1.5,CVC4/5,Ints,invalid model,0.0
+cvc4-1.5,CVC4/5,Ints,crash,296.0
+cvc4-1.5,CVC4/5,RealInts,unsoundness,0.0
+cvc4-1.5,CVC4/5,RealInts,invalid model,0.0
+cvc4-1.5,CVC4/5,RealInts,crash,117.0
+cvc4-1.5,CVC4/5,Reals,unsoundness,0.0
+cvc4-1.5,CVC4/5,Reals,invalid model,0.0
+cvc4-1.5,CVC4/5,Reals,crash,2938.0
+cvc4-1.5,CVC4/5,Strings,unsoundness,14044.0
+cvc4-1.5,CVC4/5,Strings,invalid model,0.0
+cvc4-1.5,CVC4/5,Strings,crash,21108.0
+cvc4-1.6,CVC4/5,Arrays,unsoundness,0.0
+cvc4-1.6,CVC4/5,Arrays,invalid model,0.0
+cvc4-1.6,CVC4/5,Arrays,crash,3435.0
+cvc4-1.6,CVC4/5,Bitvectors,unsoundness,0.0
+cvc4-1.6,CVC4/5,Bitvectors,invalid model,0.0
+cvc4-1.6,CVC4/5,Bitvectors,crash,10.0
+cvc4-1.6,CVC4/5,Core,unsoundness,0.0
+cvc4-1.6,CVC4/5,Core,invalid model,0.0
+cvc4-1.6,CVC4/5,Core,crash,0.0
+cvc4-1.6,CVC4/5,FP,unsoundness,0.0
+cvc4-1.6,CVC4/5,FP,invalid model,0.0
+cvc4-1.6,CVC4/5,FP,crash,0.0
+cvc4-1.6,CVC4/5,Ints,unsoundness,0.0
+cvc4-1.6,CVC4/5,Ints,invalid model,0.0
+cvc4-1.6,CVC4/5,Ints,crash,8.0
+cvc4-1.6,CVC4/5,RealInts,unsoundness,0.0
+cvc4-1.6,CVC4/5,RealInts,invalid model,5.0
+cvc4-1.6,CVC4/5,RealInts,crash,12265.0
+cvc4-1.6,CVC4/5,Reals,unsoundness,0.0
+cvc4-1.6,CVC4/5,Reals,invalid model,20.0
+cvc4-1.6,CVC4/5,Reals,crash,10729.0
+cvc4-1.6,CVC4/5,Strings,unsoundness,0.0
+cvc4-1.6,CVC4/5,Strings,invalid model,108.0
+cvc4-1.6,CVC4/5,Strings,crash,81.0
+cvc4-1.7,CVC4/5,Arrays,unsoundness,0.0
+cvc4-1.7,CVC4/5,Arrays,invalid model,0.0
+cvc4-1.7,CVC4/5,Arrays,crash,3435.0
+cvc4-1.7,CVC4/5,Bitvectors,unsoundness,0.0
+cvc4-1.7,CVC4/5,Bitvectors,invalid model,0.0
+cvc4-1.7,CVC4/5,Bitvectors,crash,0.0
+cvc4-1.7,CVC4/5,Core,unsoundness,0.0
+cvc4-1.7,CVC4/5,Core,invalid model,0.0
+cvc4-1.7,CVC4/5,Core,crash,0.0
+cvc4-1.7,CVC4/5,FP,unsoundness,0.0
+cvc4-1.7,CVC4/5,FP,invalid model,0.0
+cvc4-1.7,CVC4/5,FP,crash,0.0
+cvc4-1.7,CVC4/5,Ints,unsoundness,0.0
+cvc4-1.7,CVC4/5,Ints,invalid model,0.0
+cvc4-1.7,CVC4/5,Ints,crash,8.0
+cvc4-1.7,CVC4/5,RealInts,unsoundness,0.0
+cvc4-1.7,CVC4/5,RealInts,invalid model,0.0
+cvc4-1.7,CVC4/5,RealInts,crash,12924.0
+cvc4-1.7,CVC4/5,Reals,unsoundness,0.0
+cvc4-1.7,CVC4/5,Reals,invalid model,0.0
+cvc4-1.7,CVC4/5,Reals,crash,11185.0
+cvc4-1.7,CVC4/5,Strings,unsoundness,0.0
+cvc4-1.7,CVC4/5,Strings,invalid model,0.0
+cvc4-1.7,CVC4/5,Strings,crash,600.0
+cvc4-1.8,CVC4/5,Arrays,unsoundness,0.0
+cvc4-1.8,CVC4/5,Arrays,invalid model,3434.0
+cvc4-1.8,CVC4/5,Arrays,crash,0.0
+cvc4-1.8,CVC4/5,Bitvectors,unsoundness,0.0
+cvc4-1.8,CVC4/5,Bitvectors,invalid model,0.0
+cvc4-1.8,CVC4/5,Bitvectors,crash,0.0
+cvc4-1.8,CVC4/5,Core,unsoundness,0.0
+cvc4-1.8,CVC4/5,Core,invalid model,0.0
+cvc4-1.8,CVC4/5,Core,crash,0.0
+cvc4-1.8,CVC4/5,FP,unsoundness,0.0
+cvc4-1.8,CVC4/5,FP,invalid model,0.0
+cvc4-1.8,CVC4/5,FP,crash,0.0
+cvc4-1.8,CVC4/5,Ints,unsoundness,0.0
+cvc4-1.8,CVC4/5,Ints,invalid model,0.0
+cvc4-1.8,CVC4/5,Ints,crash,0.0
+cvc4-1.8,CVC4/5,RealInts,unsoundness,2.0
+cvc4-1.8,CVC4/5,RealInts,invalid model,29.0
+cvc4-1.8,CVC4/5,RealInts,crash,0.0
+cvc4-1.8,CVC4/5,Reals,unsoundness,0.0
+cvc4-1.8,CVC4/5,Reals,invalid model,60.0
+cvc4-1.8,CVC4/5,Reals,crash,0.0
+cvc4-1.8,CVC4/5,Strings,unsoundness,0.0
+cvc4-1.8,CVC4/5,Strings,invalid model,0.0
+cvc4-1.8,CVC4/5,Strings,crash,0.0
+cvc5-0.0.2,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.2,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.2,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.2,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.2,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.2,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.2,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.2,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.2,CVC4/5,Core,crash,0.0
+cvc5-0.0.2,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.2,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.2,CVC4/5,FP,crash,0.0
+cvc5-0.0.2,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.2,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.2,CVC4/5,Ints,crash,0.0
+cvc5-0.0.2,CVC4/5,RealInts,unsoundness,74.0
+cvc5-0.0.2,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.2,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.2,CVC4/5,Reals,unsoundness,256.0
+cvc5-0.0.2,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.2,CVC4/5,Reals,crash,0.0
+cvc5-0.0.2,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.2,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.2,CVC4/5,Strings,crash,0.0
+cvc5-0.0.3,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.3,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.3,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.3,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.3,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.3,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.3,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.3,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.3,CVC4/5,Core,crash,0.0
+cvc5-0.0.3,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.3,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.3,CVC4/5,FP,crash,0.0
+cvc5-0.0.3,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.3,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.3,CVC4/5,Ints,crash,0.0
+cvc5-0.0.3,CVC4/5,RealInts,unsoundness,74.0
+cvc5-0.0.3,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.3,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.3,CVC4/5,Reals,unsoundness,256.0
+cvc5-0.0.3,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.3,CVC4/5,Reals,crash,0.0
+cvc5-0.0.3,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.3,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.3,CVC4/5,Strings,crash,0.0
+cvc5-0.0.4,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.4,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.4,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.4,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.4,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.4,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.4,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.4,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.4,CVC4/5,Core,crash,0.0
+cvc5-0.0.4,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.4,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.4,CVC4/5,FP,crash,0.0
+cvc5-0.0.4,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.4,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.4,CVC4/5,Ints,crash,0.0
+cvc5-0.0.4,CVC4/5,RealInts,unsoundness,74.0
+cvc5-0.0.4,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.4,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.4,CVC4/5,Reals,unsoundness,256.0
+cvc5-0.0.4,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.4,CVC4/5,Reals,crash,0.0
+cvc5-0.0.4,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.4,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.4,CVC4/5,Strings,crash,0.0
+cvc5-0.0.5,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.5,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.5,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.5,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.5,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.5,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.5,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.5,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.5,CVC4/5,Core,crash,0.0
+cvc5-0.0.5,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.5,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.5,CVC4/5,FP,crash,0.0
+cvc5-0.0.5,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.5,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.5,CVC4/5,Ints,crash,0.0
+cvc5-0.0.5,CVC4/5,RealInts,unsoundness,74.0
+cvc5-0.0.5,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.5,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.5,CVC4/5,Reals,unsoundness,256.0
+cvc5-0.0.5,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.5,CVC4/5,Reals,crash,0.0
+cvc5-0.0.5,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.5,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.5,CVC4/5,Strings,crash,0.0
+cvc5-0.0.6,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.6,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.6,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.6,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.6,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.6,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.6,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.6,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.6,CVC4/5,Core,crash,0.0
+cvc5-0.0.6,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.6,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.6,CVC4/5,FP,crash,0.0
+cvc5-0.0.6,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.6,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.6,CVC4/5,Ints,crash,0.0
+cvc5-0.0.6,CVC4/5,RealInts,unsoundness,74.0
+cvc5-0.0.6,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.6,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.6,CVC4/5,Reals,unsoundness,256.0
+cvc5-0.0.6,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.6,CVC4/5,Reals,crash,0.0
+cvc5-0.0.6,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.6,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.6,CVC4/5,Strings,crash,0.0
+cvc5-0.0.7,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.7,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.7,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.7,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.7,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.7,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.7,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.7,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.7,CVC4/5,Core,crash,0.0
+cvc5-0.0.7,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.7,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.7,CVC4/5,FP,crash,0.0
+cvc5-0.0.7,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.7,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.7,CVC4/5,Ints,crash,0.0
+cvc5-0.0.7,CVC4/5,RealInts,unsoundness,74.0
+cvc5-0.0.7,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.7,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.7,CVC4/5,Reals,unsoundness,256.0
+cvc5-0.0.7,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.7,CVC4/5,Reals,crash,0.0
+cvc5-0.0.7,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.7,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.7,CVC4/5,Strings,crash,0.0
+cvc5-0.0.8,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.8,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.8,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.8,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.8,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.8,CVC4/5,Core,crash,0.0
+cvc5-0.0.8,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.8,CVC4/5,FP,crash,0.0
+cvc5-0.0.8,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.8,CVC4/5,Ints,crash,0.0
+cvc5-0.0.8,CVC4/5,RealInts,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.8,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.8,CVC4/5,Reals,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.8,CVC4/5,Reals,crash,0.0
+cvc5-0.0.8,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.8,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.8,CVC4/5,Strings,crash,0.0
+cvc5-0.0.10,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.10,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.10,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.10,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.10,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.10,CVC4/5,Core,crash,0.0
+cvc5-0.0.10,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.10,CVC4/5,FP,crash,0.0
+cvc5-0.0.10,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.10,CVC4/5,Ints,crash,0.0
+cvc5-0.0.10,CVC4/5,RealInts,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.10,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.10,CVC4/5,Reals,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.10,CVC4/5,Reals,crash,0.0
+cvc5-0.0.10,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.10,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.10,CVC4/5,Strings,crash,0.0
+cvc5-0.0.11,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.11,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.11,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.11,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.11,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.11,CVC4/5,Core,crash,0.0
+cvc5-0.0.11,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.11,CVC4/5,FP,crash,0.0
+cvc5-0.0.11,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.11,CVC4/5,Ints,crash,0.0
+cvc5-0.0.11,CVC4/5,RealInts,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.11,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.11,CVC4/5,Reals,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.11,CVC4/5,Reals,crash,0.0
+cvc5-0.0.11,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.11,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.11,CVC4/5,Strings,crash,0.0
+cvc5-0.0.12,CVC4/5,Arrays,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,Arrays,invalid model,336.0
+cvc5-0.0.12,CVC4/5,Arrays,crash,0.0
+cvc5-0.0.12,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-0.0.12,CVC4/5,Bitvectors,crash,0.0
+cvc5-0.0.12,CVC4/5,Core,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,Core,invalid model,0.0
+cvc5-0.0.12,CVC4/5,Core,crash,0.0
+cvc5-0.0.12,CVC4/5,FP,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,FP,invalid model,0.0
+cvc5-0.0.12,CVC4/5,FP,crash,0.0
+cvc5-0.0.12,CVC4/5,Ints,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,Ints,invalid model,0.0
+cvc5-0.0.12,CVC4/5,Ints,crash,0.0
+cvc5-0.0.12,CVC4/5,RealInts,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,RealInts,invalid model,0.0
+cvc5-0.0.12,CVC4/5,RealInts,crash,0.0
+cvc5-0.0.12,CVC4/5,Reals,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,Reals,invalid model,0.0
+cvc5-0.0.12,CVC4/5,Reals,crash,0.0
+cvc5-0.0.12,CVC4/5,Strings,unsoundness,0.0
+cvc5-0.0.12,CVC4/5,Strings,invalid model,0.0
+cvc5-0.0.12,CVC4/5,Strings,crash,0.0
+cvc5-1.0.0,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,Arrays,invalid model,336.0
+cvc5-1.0.0,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.0,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.0,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.0,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.0,CVC4/5,Core,crash,0.0
+cvc5-1.0.0,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,FP,invalid model,0.0
+cvc5-1.0.0,CVC4/5,FP,crash,0.0
+cvc5-1.0.0,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.0,CVC4/5,Ints,crash,0.0
+cvc5-1.0.0,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.0,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.0,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.0,CVC4/5,Reals,crash,0.0
+cvc5-1.0.0,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.0,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.0,CVC4/5,Strings,crash,0.0
+cvc5-1.0.1,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,Arrays,invalid model,336.0
+cvc5-1.0.1,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.1,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.1,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.1,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.1,CVC4/5,Core,crash,0.0
+cvc5-1.0.1,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,FP,invalid model,0.0
+cvc5-1.0.1,CVC4/5,FP,crash,0.0
+cvc5-1.0.1,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.1,CVC4/5,Ints,crash,0.0
+cvc5-1.0.1,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.1,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.1,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.1,CVC4/5,Reals,crash,0.0
+cvc5-1.0.1,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.1,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.1,CVC4/5,Strings,crash,0.0
+cvc5-1.0.2,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,Arrays,invalid model,336.0
+cvc5-1.0.2,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.2,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.2,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.2,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.2,CVC4/5,Core,crash,0.0
+cvc5-1.0.2,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,FP,invalid model,0.0
+cvc5-1.0.2,CVC4/5,FP,crash,0.0
+cvc5-1.0.2,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.2,CVC4/5,Ints,crash,0.0
+cvc5-1.0.2,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.2,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.2,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.2,CVC4/5,Reals,crash,0.0
+cvc5-1.0.2,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.2,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.2,CVC4/5,Strings,crash,0.0
+cvc5-1.0.3,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,Arrays,invalid model,8.0
+cvc5-1.0.3,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.3,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.3,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.3,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.3,CVC4/5,Core,crash,0.0
+cvc5-1.0.3,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,FP,invalid model,0.0
+cvc5-1.0.3,CVC4/5,FP,crash,0.0
+cvc5-1.0.3,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.3,CVC4/5,Ints,crash,0.0
+cvc5-1.0.3,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.3,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.3,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.3,CVC4/5,Reals,crash,0.0
+cvc5-1.0.3,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.3,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.3,CVC4/5,Strings,crash,0.0
+cvc5-1.0.4,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,Arrays,invalid model,8.0
+cvc5-1.0.4,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.4,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,Bitvectors,invalid model,16.0
+cvc5-1.0.4,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.4,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.4,CVC4/5,Core,crash,0.0
+cvc5-1.0.4,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,FP,invalid model,0.0
+cvc5-1.0.4,CVC4/5,FP,crash,0.0
+cvc5-1.0.4,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.4,CVC4/5,Ints,crash,0.0
+cvc5-1.0.4,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.4,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.4,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.4,CVC4/5,Reals,crash,0.0
+cvc5-1.0.4,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.4,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.4,CVC4/5,Strings,crash,0.0
+cvc5-1.0.5,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,Arrays,invalid model,8.0
+cvc5-1.0.5,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.5,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,Bitvectors,invalid model,16.0
+cvc5-1.0.5,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.5,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.5,CVC4/5,Core,crash,0.0
+cvc5-1.0.5,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,FP,invalid model,0.0
+cvc5-1.0.5,CVC4/5,FP,crash,0.0
+cvc5-1.0.5,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.5,CVC4/5,Ints,crash,0.0
+cvc5-1.0.5,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.5,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.5,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.5,CVC4/5,Reals,crash,0.0
+cvc5-1.0.5,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.5,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.5,CVC4/5,Strings,crash,0.0
+cvc5-1.0.6,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.0.6,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.6,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.6,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.6,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.6,CVC4/5,Core,crash,0.0
+cvc5-1.0.6,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,FP,invalid model,2.0
+cvc5-1.0.6,CVC4/5,FP,crash,0.0
+cvc5-1.0.6,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.6,CVC4/5,Ints,crash,0.0
+cvc5-1.0.6,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.6,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.6,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.6,CVC4/5,Reals,crash,0.0
+cvc5-1.0.6,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.6,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.6,CVC4/5,Strings,crash,0.0
+cvc5-1.0.7,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.0.7,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.7,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.7,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.7,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.7,CVC4/5,Core,crash,0.0
+cvc5-1.0.7,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,FP,invalid model,2.0
+cvc5-1.0.7,CVC4/5,FP,crash,0.0
+cvc5-1.0.7,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.7,CVC4/5,Ints,crash,0.0
+cvc5-1.0.7,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.7,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.7,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.7,CVC4/5,Reals,crash,0.0
+cvc5-1.0.7,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.7,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.7,CVC4/5,Strings,crash,0.0
+cvc5-1.0.8,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.0.8,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.8,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.8,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.8,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.8,CVC4/5,Core,crash,0.0
+cvc5-1.0.8,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,FP,invalid model,2.0
+cvc5-1.0.8,CVC4/5,FP,crash,0.0
+cvc5-1.0.8,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.8,CVC4/5,Ints,crash,0.0
+cvc5-1.0.8,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.8,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.8,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.8,CVC4/5,Reals,crash,0.0
+cvc5-1.0.8,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.8,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.8,CVC4/5,Strings,crash,0.0
+cvc5-1.0.9,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.0.9,CVC4/5,Arrays,crash,0.0
+cvc5-1.0.9,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.0.9,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.0.9,CVC4/5,Core,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,Core,invalid model,0.0
+cvc5-1.0.9,CVC4/5,Core,crash,0.0
+cvc5-1.0.9,CVC4/5,FP,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,FP,invalid model,2.0
+cvc5-1.0.9,CVC4/5,FP,crash,0.0
+cvc5-1.0.9,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,Ints,invalid model,0.0
+cvc5-1.0.9,CVC4/5,Ints,crash,0.0
+cvc5-1.0.9,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.0.9,CVC4/5,RealInts,crash,0.0
+cvc5-1.0.9,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,Reals,invalid model,0.0
+cvc5-1.0.9,CVC4/5,Reals,crash,0.0
+cvc5-1.0.9,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.0.9,CVC4/5,Strings,invalid model,0.0
+cvc5-1.0.9,CVC4/5,Strings,crash,0.0
+cvc5-1.1.0,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.1.0,CVC4/5,Arrays,crash,0.0
+cvc5-1.1.0,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.1.0,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.1.0,CVC4/5,Core,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,Core,invalid model,0.0
+cvc5-1.1.0,CVC4/5,Core,crash,0.0
+cvc5-1.1.0,CVC4/5,FP,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,FP,invalid model,2.0
+cvc5-1.1.0,CVC4/5,FP,crash,0.0
+cvc5-1.1.0,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,Ints,invalid model,0.0
+cvc5-1.1.0,CVC4/5,Ints,crash,0.0
+cvc5-1.1.0,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.1.0,CVC4/5,RealInts,crash,0.0
+cvc5-1.1.0,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,Reals,invalid model,0.0
+cvc5-1.1.0,CVC4/5,Reals,crash,0.0
+cvc5-1.1.0,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.1.0,CVC4/5,Strings,invalid model,0.0
+cvc5-1.1.0,CVC4/5,Strings,crash,0.0
+cvc5-1.1.1,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.1.1,CVC4/5,Arrays,crash,0.0
+cvc5-1.1.1,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.1.1,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.1.1,CVC4/5,Core,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,Core,invalid model,0.0
+cvc5-1.1.1,CVC4/5,Core,crash,0.0
+cvc5-1.1.1,CVC4/5,FP,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,FP,invalid model,2.0
+cvc5-1.1.1,CVC4/5,FP,crash,0.0
+cvc5-1.1.1,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,Ints,invalid model,0.0
+cvc5-1.1.1,CVC4/5,Ints,crash,0.0
+cvc5-1.1.1,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.1.1,CVC4/5,RealInts,crash,0.0
+cvc5-1.1.1,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,Reals,invalid model,0.0
+cvc5-1.1.1,CVC4/5,Reals,crash,0.0
+cvc5-1.1.1,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.1.1,CVC4/5,Strings,invalid model,0.0
+cvc5-1.1.1,CVC4/5,Strings,crash,0.0
+cvc5-1.1.2,CVC4/5,Arrays,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,Arrays,invalid model,13596.0
+cvc5-1.1.2,CVC4/5,Arrays,crash,0.0
+cvc5-1.1.2,CVC4/5,Bitvectors,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,Bitvectors,invalid model,0.0
+cvc5-1.1.2,CVC4/5,Bitvectors,crash,0.0
+cvc5-1.1.2,CVC4/5,Core,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,Core,invalid model,0.0
+cvc5-1.1.2,CVC4/5,Core,crash,0.0
+cvc5-1.1.2,CVC4/5,FP,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,FP,invalid model,2.0
+cvc5-1.1.2,CVC4/5,FP,crash,0.0
+cvc5-1.1.2,CVC4/5,Ints,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,Ints,invalid model,0.0
+cvc5-1.1.2,CVC4/5,Ints,crash,0.0
+cvc5-1.1.2,CVC4/5,RealInts,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,RealInts,invalid model,0.0
+cvc5-1.1.2,CVC4/5,RealInts,crash,0.0
+cvc5-1.1.2,CVC4/5,Reals,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,Reals,invalid model,0.0
+cvc5-1.1.2,CVC4/5,Reals,crash,0.0
+cvc5-1.1.2,CVC4/5,Strings,unsoundness,0.0
+cvc5-1.1.2,CVC4/5,Strings,invalid model,0.0
+cvc5-1.1.2,CVC4/5,Strings,crash,0.0
+cvc4-1.5,CVC4/5,FloatingPoints,crash,0.0

@@ -1,0 +1,7 @@
+BitvectorArrays,538
+Bitvectors,807
+Core,1299
+Ints,1730
+Reals,1579
+Strings,874
+FloatingPoints,275

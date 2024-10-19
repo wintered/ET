@@ -1,0 +1,5 @@
+z3-4.12.1 memory_max_size=1024 model_validate=true
+cvc5-1.0.5 -q --check-models --check-unsat-cores --strings-exp
+z3-4.8.11 memory_max_size=1024 model_validate=true unicode=false
+z3-before memory_max_size=1024 model_validate=true
+z3-after memory_max_size=1024 model_validate=true

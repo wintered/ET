@@ -1,0 +1,7 @@
+# Reduction  
+good: z3-4.8.10 517d907567f4283ad8b48ff9c2a3f6dce838569e
+bad: z3-4.8.11 39af2a188da198b87037fe4fad2bd5da67386c8
+
+git rev-list --count 517d907567f4283ad8b48ff9c2a3f6dce838569e..39af2a188da198b87037fe4fad2bd5da67386c8
+548
+

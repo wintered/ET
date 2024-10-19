@@ -1,0 +1,10 @@
+
+main = do 
+  args <- getArgs
+  prog <- getProgName
+  let idx = read (args!!0) :: Integer
+  if (length args) /= 1 then
+      die "Usage: <theory> <idx>"
+  else putStr ""
+  let formula = show (index idx :: Start)  
+  writeFile "formula-Reals.smt2" formula

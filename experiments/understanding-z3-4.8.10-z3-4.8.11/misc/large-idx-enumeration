@@ -1,0 +1,16 @@
+
+main = do                                                                          
+  args <- getArgs                                                                  
+  prog <- getProgName                                                              
+  if (length args) /= 3 then                                                       
+      die "Usage: ./bin/feat-Core <start_idx-pow10> <num_tests> <temp-folder>"  
+  else putStr ""                                                                   
+  let start_idx = 10 ^ (read (args!!0) :: Integer) :: Integer                      
+  let num_tests = read (args!!1) :: Integer                                        
+  let f x = x + start_idx                                                          
+  let indices = map f [1..num_tests]                                               
+  let lst  = [(index i :: Start) |  i <- indices]                                  
+  let temp_folder = args!!2                                                        
+  let fn i = temp_folder ++ "/"++ (show i) ++ ".smt2"                              
+  sequence_ [ writeFile (fn i) (show program)                                      
+            | (i,program) <- zip [0..] lst ] 
