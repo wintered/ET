@@ -70,7 +70,7 @@ solver, help you build on ET, etc.
 
 Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.github.io//)
 
-## ✍️ Publication
+## ✍️ Publication & Findings
 
 ### 🪳Bug Findings
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/497d154d-727e-4de1-88a6-f00042133e27">
