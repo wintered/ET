@@ -133,8 +133,7 @@ ET can generate test cases, you need to avoid (1) syntactic sugar (e.g, `+,\*,?`
 ANTLR features, and (3) fix the number of constants and variables. The script `etc/validate_grammar` can be helpful while grammar engineering.    
 
 ### Structure of the project   
-ET is realized by a collection of bash and python scripts. The most important    
-files are described below:   
+ET is realized by a collection of bash and python scripts. The most important files are described below:   
 
 ```
 .
