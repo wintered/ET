@@ -115,7 +115,7 @@ We observe decreased performance in newer releases of Z3 on small timeouts (sinc
 tracked the number of solved formulas from the lowest timeout of 0.015625s to the highest timeout of 8s. Lower timeouts help understand small aggregating effects 
 while higher timeouts help understand performance regressions. 
 
-<img width="1200" alt="Screenshot 2024-10-19 at 3 15 21 PM" src="https://github.com/user-attachments/assets/27395dd6-fc1c-4a59-879c-f9c3d72d435f">
+<img width="1200" alt="Screenshot 2024-10-20 at 1 12 45 PM" src="https://github.com/user-attachments/assets/edbf7d07-b778-4e5a-96c9-6e50a6b22c7a">
 
 For the lowest timeout (0.015625s), CVC4/cvc5's performance is roughly constant, but the 
 performance of Z3 versions from 4.8.11 onwards worsened with a significant decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
