@@ -88,7 +88,7 @@ already fixed. *All the bug triggers were tiny needing no further bug reduction.
 
 Out of the confirmed bugs, many were performance bugs and soundness bugs.
 Perhaps more importantly anything are the assurances that we gained. 
-**Z3 and cvc5 no longer have simple bugs**.
+We can be more confident that **Z3 and cvc5 no longer have simple bugs**.
 
 ### Evolution (Nov 2016 - Mar 2024)
 Another question we can now attempt is whether SMT solvers have become better, 
