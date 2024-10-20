@@ -75,7 +75,7 @@ We devised 8 grammars one for each official SMT-LIB theory, with a fixed number
 of constants and variable realizing quantifier-free formulas for SMT solvers. 
 
 ### 🪳 Validation Campaign 
-We conducted a validation campaign of Z3 and CVC5. We totally found 103 bugs 
+We conducted a validation campaign of Z3 and cvc5. We totally found 103 bugs 
 in the solvers out of which 84 were confirmed by the developers, and 40 were already fixed. *All bug triggers were tiny needing no further bug reduction.* 
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/497d154d-727e-4de1-88a6-f00042133e27">
