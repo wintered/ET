@@ -94,7 +94,7 @@ and performance evolve? To approach these questions, we stacked up all releases 
 Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
 of each theory tracking the number of bugs found and runtime.  
 
-### Correctness 
+### 🛑 Correctness 
 For correctness, we make the following observations:  Z3 initially 
 has many bugs in almost all theories (represented by the different colors).  
 However, after z3-4.8.8, there are much less, with some releases not triggering    
@@ -110,7 +110,7 @@ and progressively less bugs in later versions
 Our experiment further showed that releases of both solvers do not exhibit soundness bugs after z3-4.8.9 and cvc5-0.0.8, respectively.    
 Hence, we conclude that  **the correctness of Z3 and CVC4/cvc5 increased significantly**.   
 
-### Performance
+### ⏱️ Performance
 
 We decreased performance in newer releases of Z3 on small timeouts (since z3-4.8.11) 
 and regressions in early cvc5 releases on larger timeouts. For performance, we 
