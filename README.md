@@ -87,7 +87,7 @@ Perhaps more importantly anything are the assurances that we gained.
 **We can be more confident that Z3 and cvc5 no longer have simple bugs**.
 
 ### Evolution (Nov 2016 - Mar 2024)
-The small scope hyothesis states that *almost all interesting bahavior of software is observable on small inputs [Jackson '04]. 
+The small scope hyothesis states that "almost all interesting bahavior of software is observable on small inputs" [Jackson '04]. 
 Studying 1,000+ bugs in Z3 and cvc4 (c.f. [OOPSLA '20](https://dl.acm.org/doi/abs/10.1145/3428261)), we observed that the small scope hyothesis holds for SMT solvers.
 We can hence approach questions such as: *Have we tested SMT solvers enough? How did SMT solver's correctness and performance evolve*? To approach these questions, 
 we ran a large-scale experiment with all releases of Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
