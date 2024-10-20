@@ -159,7 +159,7 @@ ET is realized by a collection of bash and python scripts. The most important fi
 └── solvers.cfg             - solver configurations considered by oracle 
 ```
 
-## Citing ET
+## 📖 Citing ET
 ```
 @article{winterer-su-oopsla2024,
     author = {Winterer, Dominik and Su, Zhendong},
