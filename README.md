@@ -94,7 +94,7 @@ and performance evolve? To approach these questions, we stacked up all releases 
 Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
 of each theory tracking the number of bugs found and runtime.  
 
-### 🛑 Correctness 
+### 🔎 Correctness 
 For correctness, we make the following observations:  Z3 initially 
 has many bugs in almost all theories (represented by the different colors).  
 However, after z3-4.8.8, there are much less, with some releases not triggering    
