@@ -124,17 +124,13 @@ decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the
 highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
 and then recovers. <TODO: figure>
 
-## Customizing ET 
-ET is a generic framework applicable beyond SMT solvers by using different           
-grammars and oracles. Currently ET supports a restricted subset of ANTLR grammar  
-format (from the ANTLR parser generator). For targets other than SMT solvers,   
-the oracle needs domain-specific adjustments bin/oracle. 
+## Customization 
+ET is a generic framework applicable beyond SMT solvers by using different grammars and oracles. Currently ET supports a restricted subset of context-free [ANTLR grammars](https://www.antlr.org/). For targets other than SMT solvers, the oracle needs domain-specific adjustments bin/oracle. 
 
 ### Running ET on custom grammars
 ET v1 currently supports only a basic fragment of ANTLR grammars. To engineer a grammar for which 
-ET can generate test cases, you need to avoid (1) syntactic sugar (+,\*,?), (2) other advanced 
-ANTLR features, and (3) fix the number of constants and variables. The script 
-`etc/validate_grammar` can be helpful while grammar engineering.    
+ET can generate test cases, you need to avoid (1) syntactic sugar (e.g, `+,\*,?`), (2) other advanced 
+ANTLR features, and (3) fix the number of constants and variables. The script `etc/validate_grammar` can be helpful while grammar engineering.    
 
 ### Structure of the project   
 ET is realized by a collection of bash and python scripts. The most important    
