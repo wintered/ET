@@ -113,10 +113,14 @@ that  **the correctness of Z3 and CVC4/cvc5 increased significantly**.
 
 We observe decreased performance in newer releases of Z3 on small timeouts (since z3-4.8.11) and regressions in early cvc5 releases on larger timeouts. For performance, we 
 tracked the number of solved formulas from the lowest timeout of 0.015625s to the highest timeout of 8s. Lower timeouts help understand small aggregating effects 
-while higher timeouts help understand performance regressions. For the lowest timeout (0.015625s), CVC4/cvc5's performance is roughly constant, but the 
+while higher timeouts help understand performance regressions. 
+
+<img width="1200" alt="Screenshot 2024-10-19 at 3 15 21 PM" src="https://github.com/user-attachments/assets/27395dd6-fc1c-4a59-879c-f9c3d72d435f">
+
+For the lowest timeout (0.015625s), CVC4/cvc5's performance is roughly constant, but the 
 performance of Z3 versions from 4.8.11 onwards worsened with a significant decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
 highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
-and then recovers. <TODO: figure>
+and then recovers. 
 
 ## 🔩 Customization 
 ET is a generic framework applicable beyond SMT solvers by using different grammars and oracles. Currently ET supports a restricted subset of context-free [ANTLR grammars](https://www.antlr.org/). For targets other than SMT solvers, the oracle (`bin/oracle`) needs domain-specific adjustments. 
