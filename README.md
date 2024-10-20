@@ -18,12 +18,12 @@ ET **exhaustively enumerates test cases** based on a context-free grammar. It
 will generate small test cases first exploiting the small-scope hypothesis which 
 states that *"most bugs in software trigger on small inputs"*. Testing with small 
 test cases has many unique benefits: tiny bug triggers, bounded 
-guarantees, and being able to measuring software evolution.   
+guarantees, the ability to measure the evolution of a software.   
 
 ET v1 supports a restricted subset of ANTLR grammars (see Customization). We 
-are currently working on ET v2 to overcome many of the restrictions (planned early 2025).  
+are currently working on ET v2 to overcome many of these restrictions (planned for early 2025).  
 ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, 
-a Haskell testing library for enumeration of algebraic data-types.
+a Haskell testing library for enumeration of algebraic data types.
 
 ## 🚀 Installation 
 To use ET, please install the following requirements:  
@@ -80,40 +80,47 @@ We devised 8 grammars one for each official SMT-LIB theory, with a fixed number
 of constants and variable realizing quantifier-free formulas for SMT solvers. 
 
 ### 🪳 Validation Campaign 
-With this we conducted a validation campaign of Z3 and CVC5. We totally found 103 bugs 
+We conducted a validation campaign of Z3 and CVC5. We totally found 103 bugs 
 in the solvers out of which 84 were confirmed by the developers, and 40 were  
 already fixed. *All the bug triggers were tiny needing no further bug reduction.* 
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/497d154d-727e-4de1-88a6-f00042133e27">
 
 Out of the confirmed bugs, many were performance bugs and soundness bugs.
-Perhaps more importantly anything are the assurance that we gained. 
+Perhaps more importantly anything are the assurances that we gained. 
 **Z3 and cvc5 no longer have simple bugs**.
 
-### Evolution 
+### Evolution (Nov 2016 - Mar 2024)
 Another question we can now attempt is whether SMT solvers have become better, 
-*Have we tested SMT solvers enough?* How did they evolve wrt. correctness  
-and performance? To approach these questions, we stacked up all releases of 
-Z3 and CVC4/cvc5 from the last 6 years (61 releases). 
+*Have we tested SMT solvers enough?* How did SMT solver's correctness  
+and performance evolve? To approach these questions, we stacked up all releases of 
+Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
+of each theory tracking the number of bugs found and runtime.  
 
-### Correctness (Nov 2016 - Mar 2024)
-Considering correctness, we ran ET with grammars of each theory (represented by 
-the different colors), tracking the number of bugs that each 
+### Correctness 
+For correctness, we make the following observations:  Z3 initially 
+has many bugs in almost all theories (represented by the different colors).  
+However, after z3-4.8.8, there are much less, with some releases not triggering    
+any bugs any more. 
 
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/e9f05473-cd9d-4630-80dc-fd96a888cd4f">
+
+For CVC4/cvc5, we see a similar trend: bugs in many theories in cvc4-1.5-7,     
+and progressively less bugs in later versions 
+
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/034f5271-6782-49ec-9804-bcb2ab989459">
 
-For Z3 (top), we observe that initially there ET triggers many bugs up and then 
-drops down. For CVC4/cvc5 (bottom), we see a similar drops in bugs. Strikingly, releases 
-of both solvers do not exhibit soundness bugs after z3-4.8.9 and cvc5-0.0.8, respectively.    
-In sum, **we observe that the correctness of Z3 and CVC4/cvc5 increased significantly**.   
+Our experiment further showed that releases of both solvers do not exhibit soundness bugs after z3-4.8.9 and cvc5-0.0.8, respectively.    
+Hence, we conclude that  **the correctness of Z3 and CVC4/cvc5 increased significantly**.   
 
-### Performance (Nov 2016 - Mar 2024) 
+### Performance
+
 We decreased performance in newer releases of Z3 on small timeouts (since z3-4.8.11) 
 and regressions in early cvc5 releases on larger timeouts. For performance, we 
 tracked the number of solved formulas from the lowest timeout of 0.015625s to 
-the highest timeout of 8s. Lower timeouts help understand small aggregating effects while higher timeouts help understand performance regressions. For the lowest 
-timeout 0.015625s, CVC4/cvc5's performance is roughly constant, but the 
+the highest timeout of 8s. Lower timeouts help understand small aggregating effects 
+while higher timeouts help understand performance regressions. For the lowest 
+timeout (0.015625s), CVC4/cvc5's performance is roughly constant, but the 
 performance of Z3 versions from 4.8.11 onwards worsened with a significant 
 decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
 highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
