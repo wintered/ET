@@ -35,7 +35,7 @@ cabal
 cabal install testing-feat size-based                                   
 cabal install --lib testing-feat size-based
 ```
-GNU parallel is necessary for using `bin/run_tester` to run the tool.     
+GNU parallel is necessary for using the testing backend of the tool.     
 
 To use ET, check out the repository:
 ```
