@@ -124,7 +124,7 @@ decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the
 highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
 and then recovers. <TODO: figure>
 
-## Customization 
+## 🔩 Customization 
 ET is a generic framework applicable beyond SMT solvers by using different grammars and oracles. Currently ET supports a restricted subset of context-free [ANTLR grammars](https://www.antlr.org/). For targets other than SMT solvers, the oracle needs domain-specific adjustments `bin/oracle`. 
 
 ### Running ET on custom grammars
