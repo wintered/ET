@@ -20,10 +20,7 @@ states that *"most bugs in software trigger on small inputs"*. Testing with smal
 test cases has many unique benefits: tiny bug triggers, bounded 
 guarantees, the ability to measure the evolution of a software.   
 
-ET v1 supports a restricted subset of ANTLR grammars (see Customization). We 
-are currently working on ET v2 to overcome many of these restrictions (planned for early 2025).  
-ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, 
-a Haskell testing library for enumeration of algebraic data types.
+ ET is built on top of <a href="https://hackage.haskell.org/package/testing-feat">testing-feat</a>, a Haskell testing library for enumeration of algebraic data types. ET v1 supports a restricted subset of ANTLR grammars (see Customization). We are currently working on ET v2 to overcome many of these restrictions (planned for early 2025).
 
 ## 🚀 Installation 
 To use ET, please install the following requirements:  
@@ -50,7 +47,7 @@ git clone https://github.com/wintered/ET
 bin/gen_tester grammars/Bitvectors.g4
 ```
 
-This generates an executable bin/feat-Bitvectors.
+This generates an executable `bin/feat-Bitvectors`.
 
 #### 2. Run Tester 
 
@@ -74,24 +71,25 @@ Contact person: [Dominik Winterer](https://wintered.github.iohttps://wintered.gi
 ## ✍️ Publication & Findings
 Our [OOPSLA '24](https://doi.org/10.1145/3689795) work uses ET to (1) validate 
 the state-of-the art SMT solvers Z3 and cvc5, and (2) investigating the correctness 
-and performance evolution of releases of Z3 and CVC4/cvc5 from the last 6 years.    
-
+and performance evolution of releases of Z3 and CVC4/cvc5 from the last 6 years. 
 We devised 8 grammars one for each official SMT-LIB theory, with a fixed number 
 of constants and variable realizing quantifier-free formulas for SMT solvers. 
 
 ### 🪳 Validation Campaign 
 We conducted a validation campaign of Z3 and CVC5. We totally found 103 bugs 
-in the solvers out of which 84 were confirmed by the developers, and 40 were  
-already fixed. *All the bug triggers were tiny needing no further bug reduction.* 
+in the solvers out of which 84 were confirmed by the developers, and 40 were already fixed. *All bug triggers were tiny needing no further bug reduction.* 
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/497d154d-727e-4de1-88a6-f00042133e27">
+<br>
+<br>
 
 Out of the confirmed bugs, many were performance bugs and soundness bugs.
 Perhaps more importantly anything are the assurances that we gained. 
-We can be more confident that **Z3 and cvc5 no longer have simple bugs**.
+**We can be more confident that Z3 and cvc5 no longer have simple bugs**.
 
 ### Evolution (Nov 2016 - Mar 2024)
-Another question we can now attempt is whether SMT solvers have become better, 
+The small scope hyothesis states  ' i.e. *almost all bugs in software have small [Jackson
+
 *Have we tested SMT solvers enough?* How did SMT solver's correctness  
 and performance evolve? To approach these questions, we stacked up all releases of 
 Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
