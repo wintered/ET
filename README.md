@@ -28,12 +28,11 @@ To use ET, please install the following requirements:
 ```
 python3
 ghc
+parallel
 cabal
 cabal install testing-feat size-based                                   
 cabal install --lib testing-feat size-based
 ```
-GNU parallel is necessary for using the testing backend of the tool.     
-
 To use ET, check out the repository:
 ```
 git clone https://github.com/wintered/ET
