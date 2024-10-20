@@ -28,7 +28,8 @@ To use ET, please install the following requirements:
 ```
 python3
 parallel
-ghc, cabal
+ghc
+cabal
 cabal install testing-feat size-based                                   
 cabal install --lib testing-feat size-based
 ```
