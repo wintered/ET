@@ -87,39 +87,34 @@ Perhaps more importantly anything are the assurances that we gained.
 **We can be more confident that Z3 and cvc5 no longer have simple bugs**.
 
 ### Evolution (Nov 2016 - Mar 2024)
-The small scope hyothesis states  ' i.e. *almost all bugs in software have small [Jackson
-
-*Have we tested SMT solvers enough?* How did SMT solver's correctness  
-and performance evolve? To approach these questions, we stacked up all releases of 
-Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
-of each theory tracking the number of bugs found and runtime.  
+The small scope hyothesis states that *almost all interesting bahavior of software is observable on small inputs [Jackson '04]. 
+Studying 1,000+ bugs in Z3 and cvc4 (c.f. [OOPSLA '20](https://dl.acm.org/doi/abs/10.1145/3428261)), we observed that the small scope hyothesis holds for SMT solvers.
+We can hence approach questions such as: *Have we tested SMT solvers enough? How did SMT solver's correctness and performance evolve*? To approach these questions, 
+we ran a large-scale experiment with all releases of Z3 and CVC4/cvc5 from the last 6 years (61 releases). We then ran ET with grammars 
+of each theory tracking the number of bugs found and runtime on 1 million formulas. 
 
 ### 🔎 Correctness 
 For correctness, we make the following observations:  Z3 initially 
 has many bugs in almost all theories (represented by the different colors).  
-However, after z3-4.8.8, there are much less, with some releases not triggering    
-any bugs any more. 
+However, after z3-4.8.8, there are much less, with some releases not triggering    any bugs any more. 
 
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/e9f05473-cd9d-4630-80dc-fd96a888cd4f">
 
-For CVC4/cvc5, we see a similar trend: bugs in many theories in cvc4-1.5-7,     
-and progressively less bugs in later versions 
+For CVC4/cvc5, we see a similar trend: bugs in many theories in cvc4-1.5-7, and progressively less bugs in later versions.
+However, the switch from CVC4 to cvc5 has introduced bugs which were then again fixed in later. 
 
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/034f5271-6782-49ec-9804-bcb2ab989459">
 
-Our experiment further showed that releases of both solvers do not exhibit soundness bugs after z3-4.8.9 and cvc5-0.0.8, respectively.    
-Hence, we conclude that  **the correctness of Z3 and CVC4/cvc5 increased significantly**.   
+Our experiment further showed that releases of both solvers do not exhibit soundness bugs after z3-4.8.9 and cvc5-0.0.8, respectively.
+Moreover, Z3 and cvc5 are now solid on the theory of Strings, which was considered unstable for a long time. Hence, we conclude 
+that  **the correctness of Z3 and CVC4/cvc5 increased significantly**.   
 
 ### ⏱️ Performance
 
-We decreased performance in newer releases of Z3 on small timeouts (since z3-4.8.11) 
-and regressions in early cvc5 releases on larger timeouts. For performance, we 
-tracked the number of solved formulas from the lowest timeout of 0.015625s to 
-the highest timeout of 8s. Lower timeouts help understand small aggregating effects 
-while higher timeouts help understand performance regressions. For the lowest 
-timeout (0.015625s), CVC4/cvc5's performance is roughly constant, but the 
-performance of Z3 versions from 4.8.11 onwards worsened with a significant 
-decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
+We observe decreased performance in newer releases of Z3 on small timeouts (since z3-4.8.11) and regressions in early cvc5 releases on larger timeouts. For performance, we 
+tracked the number of solved formulas from the lowest timeout of 0.015625s to the highest timeout of 8s. Lower timeouts help understand small aggregating effects 
+while higher timeouts help understand performance regressions. For the lowest timeout (0.015625s), CVC4/cvc5's performance is roughly constant, but the 
+performance of Z3 versions from 4.8.11 onwards worsened with a significant decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
 highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
 and then recovers. <TODO: figure>
 
