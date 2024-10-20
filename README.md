@@ -109,6 +109,15 @@ of both solvers do not exhibit soundness bugs after z3-4.8.9 and cvc5-0.0.8, res
 In sum, **we observe that the correctness of Z3 and CVC4/cvc5 increased significantly**.   
 
 ### Performance (Nov 2016 - Mar 2024) 
+We decreased performance in newer releases of Z3 on small timeouts (since z3-4.8.11) 
+and regressions in early cvc5 releases on larger timeouts. For performance, we 
+tracked the number of solved formulas from the lowest timeout of 0.015625s to 
+the highest timeout of 8s. Lower timeouts help understand small aggregating effects while higher timeouts help understand performance regressions. For the lowest 
+timeout 0.015625s, CVC4/cvc5's performance is roughly constant, but the 
+performance of Z3 versions from 4.8.11 onwards worsened with a significant 
+decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
+highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
+and then recovers. <TODO: figure>
 
 ## Customizing ET 
 ET is a generic framework applicable beyond SMT solvers by using different           
@@ -146,6 +155,7 @@ files are described below:
 │   ├── RealInts.g4
 │   ├── Reals.g4
 │   └── Strings.g4
+├── experiments             - scripts for experiments (OOPSLA '24)    
 └── solvers.cfg             - solver configurations considered by oracle 
 ```
 
