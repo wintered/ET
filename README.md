@@ -121,7 +121,7 @@ For the lowest timeout (0.015625s), CVC4/cvc5's performance is roughly constant,
 performance of Z3 versions from 4.8.11 onwards worsened with a significant decrease from z3-4.8.10 to z3-4.8.11 (see top-left). For the 
 highest timeout of 8s, Z3 is roughly constant while cvc5's performance declines 
 and then recovers. In sum, recent Z3 releases solve fewer formulas at lowest timeouts. At higher timeouts early cvc5 releases solve fewer
-Bitvector formulas and exposed regressions in Arrays. Root-case analysis via bisection point to an earlier issue in Z3 () for Z3, and issues related to 
+Bitvector formulas and exposed regressions in Arrays. Root-case analysis via bisection point to an earlier issue in Z3 (https://github.com/Z3Prover/z3/pull/5040, https://github.com/Z3Prover/z3/issues/5330), and issues related to 
 the bv2nat operator (amongst others) for cvc5.
 
 ## 🔩 Customization 
