@@ -138,7 +138,7 @@ ET is realized by a collection of bash and python scripts. The most important fi
 ```
 .
 ├── bin
-│   ├── gen_tester          - given <grammar>, generate exhaustive tester bin/feat-<grammar>    
+│   ├── gen_tester          - given <grammar>, generate exhaustive tester bin/feat-<grammar>
 │   ├── feat-<grammar>      - given <num_tests> <folder> exhaustively generate tests    
 │   ├── oracle              - script for differential testing SMT solvers   
 │   └── run_tester          - generate and run tests
