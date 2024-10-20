@@ -9,8 +9,7 @@
     <a href="https://opensource.org/licenses/MIT" alt="License">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
     </a>
-<img alt="GitHub Release" src="https://img.shields.io/github/v/release/wintered/ET">
-
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/wintered/ET">
 </div>
 <br>
 
