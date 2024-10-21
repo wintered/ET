@@ -130,7 +130,7 @@ ET is a generic framework applicable beyond SMT solvers by using different gramm
 
 ### Running ET on custom grammars
 ET v1 currently supports only a basic fragment of ANTLR grammars. To engineer a grammar for which 
-ET can generate test cases, you need to avoid (1) syntactic sugar (e.g, `+,\*,?`), (2) other advanced 
+ET can generate test cases, you need to avoid (1) syntactic sugar (e.g, `+,*,?`), (2) other advanced 
 ANTLR features, and (3) fix the number of constants and variables. The script `etc/validate_grammar` can be helpful while grammar engineering.    
 
 ### Structure of the project   
