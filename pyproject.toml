@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "et"
+version = "0.1.0"
+description = ""
+authors = ["Yann Girsberger <yann@ywg.ch>", "Dominik Winterer <dominik.winterer@inf.ethz.ch>", "Zhendong Su <zhendong.su@inf.ethz.ch.>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+hypothesis = "^6.100.0"
+pytest = "^8.1.1"
+black = "^24.3.0"
+isort = "^5.13.2"
+pre-commit = "^3.7.0"
+mypy = "^1.9.0"
+
+[tool.poetry.scripts]
+et = "et:main.run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+files = ["et", "tests"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = 'et/*'
+
+[tool.isort]
+profile = "black"
+src_paths = ["et"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]

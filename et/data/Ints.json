@@ -1,0 +1,10 @@
+{
+    "variables":
+    {
+        "INT_VAR": "(declare-const {} Int)"
+    }
+    , 
+    "constants": {
+        "ICONST": [ "0", "1" ]
+    }
+}
