@@ -1,5 +1,5 @@
 <p align="center">
-    <a><img width="200" alt="portfolio_view" align="center" src="https://wintered.github.io/img/ET/Logo/PNG/logo.png"></a>
+    <a><img width="200" alt="portfolio_view" align="center" src="etc/ET-logo.png"></a>
 </p>
 <br />
 <div align="center">
